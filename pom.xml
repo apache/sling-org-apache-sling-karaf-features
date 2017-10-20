@@ -43,9 +43,9 @@
   </properties>
 
   <scm>
-    <connection>scm:svn:http://svn.apache.org/repos/asf/sling/trunk/karaf/org.apache.sling.karaf-features</connection>
-    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/sling/trunk/karaf/org.apache.sling.karaf-features</developerConnection>
-    <url>http://svn.apache.org/viewvc/sling/trunk/karaf/org.apache.sling.karaf-features</url>
+    <connection>scm:git:https://gitbox.apache.org/repos/asf/sling-org-apache-sling-karaf-features.git</conncetion>
+    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/sling-org-apache-sling-karaf-features.git</developerConnection>
+    <url>https://gitbox.apache.org/repos/asf?p=sling-org-apache-sling-karaf-features.git</url>
   </scm>
 
   <build>
