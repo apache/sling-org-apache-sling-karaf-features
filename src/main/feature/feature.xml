@@ -186,7 +186,7 @@
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-extension-discovery</feature>
-    <bundle dependency="true">mvn:org.apache.felix/org.apache.felix.inventory/1.0.4</bundle>
+    <bundle dependency="true">mvn:org.apache.felix/org.apache.felix.inventory/1.0.6</bundle>
   </feature>
   <feature name="sling-extension-explorer" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.extensions.explorer/1.0.4</bundle>
@@ -242,9 +242,9 @@
     <bundle>mvn:org.apache.sling/org.apache.sling.models.jacksonexporter/1.0.8</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling-extension-models</feature>
-    <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-annotations/2.9.2</bundle>
-    <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-core/2.9.2</bundle>
-    <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-databind/2.9.2</bundle>
+    <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-annotations/2.9.3</bundle>
+    <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-core/2.9.3</bundle>
+    <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-databind/2.9.3</bundle>
   </feature>
   <feature name="sling-extension-pipes" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.pipes/1.1.0</bundle>
@@ -264,7 +264,7 @@
     <bundle>mvn:org.apache.sling/org.apache.sling.resource.inventory/1.0.8</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
-    <bundle dependency="true">mvn:org.apache.felix/org.apache.felix.inventory/1.0.4</bundle>
+    <bundle dependency="true">mvn:org.apache.felix/org.apache.felix.inventory/1.0.6</bundle>
   </feature>
   <feature name="sling-extension-resource-presence" version="${project.version}">
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-resource_presence">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-resource_presence</config>
@@ -473,7 +473,7 @@
     <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_scripting">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_scripting</config>
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-scripting">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-scripting</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.api/2.2.0</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.core/2.0.46</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.core/2.0.53-SNAPSHOT</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature>webconsole</feature>
@@ -519,7 +519,7 @@
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-scripting_sightly">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-scripting_sightly</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly/1.0.44</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.compiler/1.0.14</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.compiler.java/1.0.16</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.compiler.java/1.0.18</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.js.provider/1.0.24</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.models.provider/1.0.6</bundle>
     <!-- dependencies -->
@@ -551,7 +551,7 @@
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-servlets">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-servlets</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.servlets.get/2.1.30</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.servlets.post/2.3.22</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.servlets.resolver/2.4.14</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.servlets.resolver/2.4.20</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-extension-xss</feature>
