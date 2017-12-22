@@ -250,7 +250,7 @@
     <bundle>mvn:org.apache.sling/org.apache.sling.pipes/1.1.0</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
-    <feature version="${project.version}">jackrabbit-sling</feature>
+    <feature version="${project.version}">jackrabbit</feature>
     <feature version="${project.version}">sling-extension-event</feature>
     <feature version="${project.version}">sling-extension-query</feature>
   </feature>
@@ -360,9 +360,9 @@
     <!-- dependencies -->
     <feature>webconsole</feature>
     <feature version="${project.version}">sling</feature>
-    <feature version="${project.version}">jackrabbit-sling</feature>
-    <feature version="${project.version}">jackrabbit-oak-sling</feature>
-    <feature version="${project.version}">tika-sling</feature>
+    <feature version="${project.version}">jackrabbit</feature>
+    <feature version="${project.version}">jackrabbit-oak</feature>
+    <feature version="${project.version}">tika</feature>
   </feature>
   <feature name="sling-jcr-compiler" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.compiler/2.1.0</bundle>
@@ -557,7 +557,7 @@
     <feature version="${project.version}">sling-extension-xss</feature>
   </feature>
   <!-- Apache Jackrabbit -->
-  <feature name="jackrabbit-sling" version="${project.version}">
+  <feature name="jackrabbit" version="${project.version}">
     <bundle>mvn:org.apache.jackrabbit/jackrabbit-api/${org.apache.jackrabbit.version}</bundle>
     <bundle>mvn:org.apache.jackrabbit/jackrabbit-data/${org.apache.jackrabbit.version}</bundle>
     <bundle>mvn:org.apache.jackrabbit/jackrabbit-jcr-commons/${org.apache.jackrabbit.version}</bundle>
@@ -583,20 +583,20 @@
     <bundle dependency="true">mvn:org.apache.httpcomponents/httpcore-osgi/4.4.8</bundle>
     <bundle dependency="true">mvn:org.apache.httpcomponents/httpclient-osgi/4.5.4</bundle>
   </feature>
-  <feature name="jackrabbit-oak-sling" version="${project.version}">
+  <feature name="jackrabbit-oak" version="${project.version}">
     <bundle>mvn:org.apache.jackrabbit/oak-core/${org.apache.jackrabbit.oak.version}</bundle>
     <bundle>mvn:org.apache.jackrabbit/oak-commons/${org.apache.jackrabbit.oak.version}</bundle>
     <bundle>mvn:org.apache.jackrabbit/oak-blob/${org.apache.jackrabbit.oak.version}</bundle>
     <bundle>mvn:org.apache.jackrabbit/oak-jcr/${org.apache.jackrabbit.oak.version}</bundle>
     <!-- dependencies -->
     <feature>scr</feature>
-    <feature version="${project.version}">jackrabbit-sling</feature>
-    <feature version="${project.version}">tika-sling</feature>
+    <feature version="${project.version}">jackrabbit</feature>
+    <feature version="${project.version}">tika</feature>
     <bundle>mvn:com.google.guava/guava/15.0</bundle>
     <bundle>mvn:org.apache.felix/org.apache.felix.jaas/1.0.2</bundle>
   </feature>
   <!-- Apache Tika -->
-  <feature name="tika-sling" version="${project.version}">
+  <feature name="tika" version="${project.version}">
     <bundle>mvn:org.apache.tika/tika-core/${org.apache.tika.version}</bundle>
     <bundle>mvn:org.apache.tika/tika-bundle/${org.apache.tika.version}</bundle>
   </feature>
@@ -615,7 +615,7 @@
     <feature version="${project.version}">sling-auth-form</feature>
   </feature>
   <!-- Composum -->
-  <feature name="composum-sling" version="${project.version}">
+  <feature name="composum" version="${project.version}">
     <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-composum">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-composum</config>
     <bundle>mvn:com.composum.sling.core/composum-sling-core-commons/1.8.2</bundle>
     <bundle>mvn:com.composum.sling.core/composum-sling-core-console/1.8.2</bundle>
