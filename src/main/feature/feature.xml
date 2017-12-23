@@ -190,12 +190,6 @@
     <feature version="${project.version}">sling-extension-discovery</feature>
     <bundle dependency="true">mvn:org.apache.felix/org.apache.felix.inventory/1.0.6</bundle>
   </feature>
-  <feature name="sling-extension-explorer" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.extensions.explorer/1.0.4</bundle>
-    <!-- dependencies -->
-    <feature version="${project.version}">sling</feature>
-    <feature version="${project.version}">sling-scripting-javascript</feature>
-  </feature>
   <feature name="sling-extension-featureflags" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.featureflags/1.2.2</bundle>
     <!-- dependencies -->
@@ -395,7 +389,7 @@
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-auth-form</feature>
-    <feature version="${project.version}">sling-extension-explorer</feature>
+    <feature version="${project.version}">composum</feature>
   </feature>
   <!-- Apache Sling NoSQL -->
   <feature name="sling-nosql-generic" version="${project.version}">
