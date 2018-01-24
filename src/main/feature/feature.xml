@@ -454,7 +454,7 @@
     <feature version="${project.version}">sling-quickstart-oak</feature>
     <bundle>mvn:org.apache.jackrabbit/oak-lucene/${org.apache.jackrabbit.oak.version}</bundle>
     <bundle>mvn:org.apache.jackrabbit/oak-segment-tar/${org.apache.jackrabbit.oak.version}</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.jcr.oak.server/1.1.4</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.jcr.oak.server/1.1.5-SNAPSHOT</bundle>
   </feature>
   <feature name="sling-quickstart-oak-mongo" version="${project.version}">
     <config external="true" name="org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService</config>
@@ -463,7 +463,7 @@
     <bundle>mvn:org.apache.jackrabbit/oak-lucene/${org.apache.jackrabbit.oak.version}</bundle>
     <bundle>mvn:org.mongodb/mongo-java-driver/3.6.1</bundle>
     <bundle>mvn:com.h2database/h2-mvstore/1.4.196</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.jcr.oak.server/1.1.4</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.jcr.oak.server/1.1.5-SNAPSHOT</bundle>
   </feature>
   <!-- Apache Sling Scripting -->
   <feature name="sling-scripting" version="${project.version}">
@@ -584,7 +584,17 @@
     <bundle>mvn:org.apache.jackrabbit/oak-core/${org.apache.jackrabbit.oak.version}</bundle>
     <bundle>mvn:org.apache.jackrabbit/oak-commons/${org.apache.jackrabbit.oak.version}</bundle>
     <bundle>mvn:org.apache.jackrabbit/oak-blob/${org.apache.jackrabbit.oak.version}</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-core-spi/${org.apache.jackrabbit.oak.version}</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-store-spi/${org.apache.jackrabbit.oak.version}</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-query-spi/${org.apache.jackrabbit.oak.version}</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-security-spi/${org.apache.jackrabbit.oak.version}</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-api/${org.apache.jackrabbit.oak.version}</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-blob/${org.apache.jackrabbit.oak.version}</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-blob-plugins/${org.apache.jackrabbit.oak.version}</bundle>
     <bundle>mvn:org.apache.jackrabbit/oak-jcr/${org.apache.jackrabbit.oak.version}</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-store-composite/${org.apache.jackrabbit.oak.version}</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-store-document/${org.apache.jackrabbit.oak.version}</bundle>
+    
     <!-- dependencies -->
     <feature>scr</feature>
     <feature version="${project.version}">jackrabbit</feature>
