@@ -602,7 +602,10 @@
   <!-- Apache Tika -->
   <feature name="tika" version="${project.version}">
     <bundle>mvn:org.apache.tika/tika-core/${org.apache.tika.version}</bundle>
-    <bundle>mvn:org.apache.tika/tika-bundle/${org.apache.tika.version}</bundle>
+    <bundle>mvn:org.apache.tika/tika-parsers/${org.apache.tika.version}</bundle>
+    <bundle>mvn:org.apache.pdfbox/pdfbox/2.0.8</bundle>
+    <bundle>mvn:org.apache.pdfbox/fontbox/2.0.8</bundle>
+    <bundle>mvn:org.apache.pdfbox/jempbox/1.8.13</bundle>
   </feature>
   <!-- Apache Sling Samples -->
   <feature name="sling-samples-fling" version="${project.version}">
