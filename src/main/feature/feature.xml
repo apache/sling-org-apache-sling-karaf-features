@@ -122,7 +122,7 @@
     <bundle dependency="true">mvn:io.dropwizard.metrics/metrics-core/3.2.6</bundle>
   </feature>
   <feature name="sling-commons-threads" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.commons.threads/3.2.10</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.commons.threads/3.2.16</bundle>
     <!-- dependencies -->
     <feature>config</feature>
   </feature>
@@ -139,9 +139,9 @@
   </feature>
   <feature name="sling-discovery" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.discovery.api/1.0.4</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.discovery.base/2.0.4</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.discovery.base/2.0.8</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.discovery.commons/1.0.20</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.discovery.support/1.0.0</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.discovery.support/1.0.4</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <bundle dependency="true">mvn:javax.jcr/jcr/2.0</bundle>
@@ -196,7 +196,7 @@
     <feature version="${project.version}">sling</feature>
   </feature>
   <feature name="sling-fsresource" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.fsresource/2.1.10</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.fsresource/2.1.12</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">jackrabbit-vault</feature>
@@ -218,7 +218,7 @@
   <feature name="sling-i18n" version="${project.version}">
     <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_i18n">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_i18n</config>
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-i18n">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-i18n</config>
-    <bundle>mvn:org.apache.sling/org.apache.sling.i18n/2.5.10</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.i18n/2.5.12</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
   </feature>
@@ -238,20 +238,21 @@
     <bundle>mvn:org.apache.sling/org.apache.sling.models.jacksonexporter/1.0.8</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling-models</feature>
-    <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-annotations/2.9.3</bundle>
-    <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-core/2.9.3</bundle>
-    <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-databind/2.9.3</bundle>
+    <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-annotations/2.9.4</bundle>
+    <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-core/2.9.4</bundle>
+    <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-databind/2.9.4</bundle>
   </feature>
   <feature name="sling-pipes" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.pipes/1.1.0</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.pipes/2.0.2</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">jackrabbit</feature>
     <feature version="${project.version}">sling-event</feature>
+    <feature version="${project.version}">sling-models</feature>
     <feature version="${project.version}">sling-query</feature>
   </feature>
   <feature name="sling-query" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.query/3.0.0</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.query/4.0.0</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <bundle dependency="true">mvn:javax.jcr/jcr/2.0</bundle>
@@ -408,7 +409,7 @@
     <bundle>mvn:org.apache.sling/org.apache.sling.nosql.mongodb-resourceprovider/1.1.0</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling-nosql-generic</feature>
-    <bundle dependency="true">mvn:org.mongodb/mongo-java-driver/3.6.1</bundle>
+    <bundle dependency="true">mvn:org.mongodb/mongo-java-driver/3.6.2</bundle>
   </feature>
   <!-- Apache Sling Quickstart -->
   <feature name="sling-quickstart-nosql-couchbase" version="${project.version}">
@@ -461,7 +462,7 @@
     <config external="true" name="org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService</config>
     <feature version="${project.version}">sling-quickstart-oak</feature>
     <bundle>mvn:org.apache.jackrabbit/oak-lucene/${org.apache.jackrabbit.oak.version}</bundle>
-    <bundle>mvn:org.mongodb/mongo-java-driver/3.6.1</bundle>
+    <bundle>mvn:org.mongodb/mongo-java-driver/3.6.2</bundle>
     <bundle>mvn:com.h2database/h2-mvstore/1.4.196</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.oak.server/1.1.4</bundle>
   </feature>
