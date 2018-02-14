@@ -376,12 +376,12 @@
     <feature version="${project.version}">sling-servlets</feature>
   </feature>
   <feature name="sling-jcr-repoinit" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.jcr.repoinit/1.1.6</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.jcr.repoinit/1.1.8</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-jcr</feature>
     <feature version="${project.version}">sling-jcr-jackrabbit-security</feature>
-    <bundle dependency="true">mvn:org.apache.sling/org.apache.sling.repoinit.parser/1.2.0</bundle>
+    <bundle dependency="true">mvn:org.apache.sling/org.apache.sling.repoinit.parser/1.2.2</bundle>
     <bundle dependency="true">mvn:org.apache.sling/org.apache.sling.provisioning.model/1.8.4</bundle>
   </feature>
   <!-- Apache Sling Launchpad -->
@@ -504,7 +504,7 @@
     <!-- dependencies -->
     <feature version="${project.version}">sling-scripting</feature>
     <bundle dependency="true">mvn:javax.jcr/jcr/2.0</bundle>
-    <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.rhino/1.7.7.2_1</bundle>
+    <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.rhino/1.7.8_1</bundle>
   </feature>
   <feature name="sling-scripting-jsp" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.jsp/2.3.4</bundle>
@@ -530,7 +530,7 @@
     <feature version="${project.version}">sling-xss</feature>
     <feature version="${project.version}">sling-commons-compiler</feature>
     <feature version="${project.version}">sling-commons-fsclassloader</feature>
-    <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.rhino/1.7.7.2_1</bundle>
+    <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.rhino/1.7.8_1</bundle>
   </feature>
   <feature name="sling-scripting-thymeleaf" version="${project.version}">
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-scripting_thymeleaf">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-scripting_thymeleaf</config>
