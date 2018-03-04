@@ -24,7 +24,7 @@
     <bundle>mvn:org.apache.sling/org.apache.sling.api/2.16.4</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.auth.core/1.4.2</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.engine/2.6.12</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.resourceresolver/1.5.34</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.resourceresolver/1.5.36</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.serviceusermapper/1.4.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.settings/1.3.8</bundle>
     <!-- Apache Sling Commons -->
@@ -102,8 +102,8 @@
     <feature>scr</feature>
     <feature version="${project.version}">sling-commons-messaging</feature>
     <feature version="${project.version}">sling-commons-threads</feature>
-    <bundle dependency="true">mvn:com.sun.mail/javax.mail/1.6.0</bundle>
-    <bundle dependency="true">mvn:javax.mail/javax.mail-api/1.6.0</bundle>
+    <bundle dependency="true">mvn:com.sun.mail/javax.mail/1.6.1</bundle>
+    <bundle dependency="true">mvn:javax.mail/javax.mail-api/1.6.1</bundle>
     <bundle dependency="true">mvn:org.apache.commons/commons-email/1.5</bundle>
   </feature>
   <feature name="sling-commons-metrics" version="${project.version}">
@@ -315,7 +315,7 @@
   <!-- Apache Sling Installer -->
   <feature name="sling-installer" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.installer.console/1.0.2</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.installer.core/3.8.10</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.installer.core/3.8.12</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.installer.factory.configuration/1.1.2</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -409,7 +409,7 @@
     <bundle>mvn:org.apache.sling/org.apache.sling.nosql.mongodb-resourceprovider/1.1.0</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling-nosql-generic</feature>
-    <bundle dependency="true">mvn:org.mongodb/mongo-java-driver/3.6.2</bundle>
+    <bundle dependency="true">mvn:org.mongodb/mongo-java-driver/3.6.3</bundle>
   </feature>
   <!-- Apache Sling Quickstart -->
   <feature name="sling-quickstart-nosql-couchbase" version="${project.version}">
@@ -446,7 +446,7 @@
     <feature version="${project.version}">sling-bundleresource</feature>
     <feature version="${project.version}">sling-discovery-oak</feature>
     <bundle dependency="true">mvn:org.apache.felix/org.apache.felix.prefs/1.1.0</bundle>
-    <bundle>mvn:org.apache.felix/org.apache.felix.webconsole.plugins.memoryusage/1.0.6</bundle>
+    <bundle>mvn:org.apache.felix/org.apache.felix.webconsole.plugins.memoryusage/1.0.8</bundle>
     <bundle>mvn:org.apache.felix/org.apache.felix.webconsole.plugins.packageadmin/1.0.4</bundle>
   </feature>
   <feature name="sling-quickstart-oak-tar" version="${project.version}">
@@ -462,7 +462,7 @@
     <config external="true" name="org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService</config>
     <feature version="${project.version}">sling-quickstart-oak</feature>
     <bundle>mvn:org.apache.jackrabbit/oak-lucene/${org.apache.jackrabbit.oak.version}</bundle>
-    <bundle>mvn:org.mongodb/mongo-java-driver/3.6.2</bundle>
+    <bundle>mvn:org.mongodb/mongo-java-driver/3.6.3</bundle>
     <bundle>mvn:com.h2database/h2-mvstore/1.4.196</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.oak.server/1.1.4</bundle>
   </feature>
@@ -488,9 +488,9 @@
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-scripting</feature>
-    <bundle dependency="true">mvn:org.codehaus.groovy/groovy/2.4.13</bundle>
-    <bundle dependency="true">mvn:org.codehaus.groovy/groovy-json/2.4.13</bundle>
-    <bundle dependency="true">mvn:org.codehaus.groovy/groovy-templates/2.4.13</bundle>
+    <bundle dependency="true">mvn:org.codehaus.groovy/groovy/2.4.14</bundle>
+    <bundle dependency="true">mvn:org.codehaus.groovy/groovy-json/2.4.14</bundle>
+    <bundle dependency="true">mvn:org.codehaus.groovy/groovy-templates/2.4.14</bundle>
   </feature>
   <feature name="sling-scripting-java" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.java/2.1.2</bundle>
@@ -515,9 +515,9 @@
   </feature>
   <feature name="sling-scripting-sightly" version="${project.version}">
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-scripting_sightly">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-scripting_sightly</config>
-    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly/1.0.46</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.compiler/1.0.16</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.compiler.java/1.0.18</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly/1.0.48-1.3.1</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.compiler/1.0.20-1.3.1</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.compiler.java/1.0.22-1.3.1</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.js.provider/1.0.26</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.models.provider/1.0.6</bundle>
     <!-- dependencies -->
@@ -593,7 +593,7 @@
     <bundle>mvn:org.apache.felix/org.apache.felix.jaas/1.0.2</bundle>
   </feature>
   <feature name="jackrabbit-vault" version="${project.version}">
-    <bundle>mvn:org.apache.jackrabbit.vault/org.apache.jackrabbit.vault/3.1.42</bundle>
+    <bundle>mvn:org.apache.jackrabbit.vault/org.apache.jackrabbit.vault/3.1.44</bundle>
     <!-- dependencies -->
     <feature>scr</feature>
     <feature version="${project.version}">jackrabbit</feature>
