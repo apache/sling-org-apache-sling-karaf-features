@@ -384,14 +384,6 @@
     <bundle dependency="true">mvn:org.apache.sling/org.apache.sling.repoinit.parser/1.2.2</bundle>
     <bundle dependency="true">mvn:org.apache.sling/org.apache.sling.provisioning.model/1.8.4</bundle>
   </feature>
-  <!-- Apache Sling Launchpad -->
-  <feature name="sling-launchpad-content" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.launchpad.content/2.0.13-SNAPSHOT</bundle>
-    <!-- dependencies -->
-    <feature version="${project.version}">sling</feature>
-    <feature version="${project.version}">sling-auth-form</feature>
-    <feature version="${project.version}">composum</feature>
-  </feature>
   <!-- Apache Sling NoSQL -->
   <feature name="sling-nosql-generic" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.nosql.generic/1.1.0</bundle>
@@ -553,6 +545,14 @@
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-xss</feature>
+  </feature>
+  <!-- Apache Sling Starter -->
+  <feature name="sling-starter-content" version="${project.version}">
+    <bundle>mvn:org.apache.sling/org.apache.sling.starter.content/1.0.0-SNAPSHOT</bundle>
+    <!-- dependencies -->
+    <feature version="${project.version}">sling</feature>
+    <feature version="${project.version}">sling-auth-form</feature>
+    <feature version="${project.version}">composum</feature>
   </feature>
   <!-- Apache Jackrabbit -->
   <feature name="jackrabbit" version="${project.version}">
