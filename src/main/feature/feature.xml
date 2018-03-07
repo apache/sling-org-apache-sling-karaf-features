@@ -449,7 +449,7 @@
     <bundle>mvn:org.apache.jackrabbit/oak-segment-tar/${org.apache.jackrabbit.oak.version}</bundle>
     <!-- OAK-7263 oak-lucene should not depend on oak-store-document -->
     <bundle>mvn:org.apache.jackrabbit/oak-store-document/${org.apache.jackrabbit.oak.version}</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.jcr.oak.server/1.2.1-SNAPSHOT</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.jcr.oak.server/1.2.0</bundle>
   </feature>
   <feature name="sling-quickstart-oak-mongo" version="${project.version}">
     <config external="true" name="org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService</config>
@@ -459,7 +459,7 @@
     <bundle>mvn:org.apache.jackrabbit/oak-store-document/${org.apache.jackrabbit.oak.version}</bundle>
     <bundle>mvn:com.h2database/h2-mvstore/1.4.196</bundle>
     <bundle>mvn:org.mongodb/mongo-java-driver/3.6.3</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.jcr.oak.server/1.2.1-SNAPSHOT</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.jcr.oak.server/1.2.0</bundle>
   </feature>
   <!-- Apache Sling Scripting -->
   <feature name="sling-scripting" version="${project.version}">
