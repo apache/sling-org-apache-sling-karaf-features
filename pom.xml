@@ -35,10 +35,6 @@
   <name>Apache Sling - Karaf Features</name>
   <description>Apache Sling Features for provisioning with Apache Karaf</description>
 
-  <properties>
-    <org.apache.karaf.version>4.2.0.M2</org.apache.karaf.version>
-  </properties>
-
   <scm>
     <connection>scm:git:https://gitbox.apache.org/repos/asf/sling-org-apache-sling-karaf-features.git</connection>
     <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/sling-org-apache-sling-karaf-features.git</developerConnection>
@@ -50,7 +46,7 @@
       <plugin>
         <groupId>org.apache.karaf.tooling</groupId>
         <artifactId>karaf-maven-plugin</artifactId>
-        <version>${org.apache.karaf.version}</version>
+        <version>4.2.0.M2</version>
         <extensions>true</extensions>
         <executions>
           <execution>
