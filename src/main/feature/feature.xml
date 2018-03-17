@@ -201,8 +201,8 @@
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">jackrabbit-vault</feature>
     <bundle dependency="true">mvn:javax.jcr/jcr/2.0</bundle>
-    <bundle dependency="true">mvn:org.apache.jackrabbit/jackrabbit-api/${org.apache.jackrabbit.version}</bundle>
-    <bundle dependency="true">mvn:org.apache.jackrabbit/jackrabbit-jcr-commons/${org.apache.jackrabbit.version}</bundle>
+    <bundle dependency="true">mvn:org.apache.jackrabbit/jackrabbit-api/2.16.1</bundle>
+    <bundle dependency="true">mvn:org.apache.jackrabbit/jackrabbit-jcr-commons/2.16.1</bundle>
     <bundle dependency="true">mvn:com.google.guava/guava/15.0</bundle>
   </feature>
   <feature name="sling-healthcheck" version="${project.version}">
@@ -445,18 +445,18 @@
     <config external="true" name="org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService</config>
     <config external="true" name="org.apache.jackrabbit.oak.segment.SegmentNodeStoreService">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService</config>
     <feature version="${project.version}">sling-quickstart-oak</feature>
-    <bundle>mvn:org.apache.jackrabbit/oak-lucene/${org.apache.jackrabbit.oak.version}</bundle>
-    <bundle>mvn:org.apache.jackrabbit/oak-segment-tar/${org.apache.jackrabbit.oak.version}</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-lucene/1.8.2</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-segment-tar/1.8.2</bundle>
     <!-- OAK-7263 oak-lucene should not depend on oak-store-document -->
-    <bundle>mvn:org.apache.jackrabbit/oak-store-document/${org.apache.jackrabbit.oak.version}</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-store-document/1.8.2</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.oak.server/1.2.0</bundle>
   </feature>
   <feature name="sling-quickstart-oak-mongo" version="${project.version}">
     <config external="true" name="org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService</config>
     <config external="true" name="org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService</config>
     <feature version="${project.version}">sling-quickstart-oak</feature>
-    <bundle>mvn:org.apache.jackrabbit/oak-lucene/${org.apache.jackrabbit.oak.version}</bundle>
-    <bundle>mvn:org.apache.jackrabbit/oak-store-document/${org.apache.jackrabbit.oak.version}</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-lucene/1.8.2</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-store-document/1.8.2</bundle>
     <bundle>mvn:com.h2database/h2-mvstore/1.4.196</bundle>
     <bundle>mvn:org.mongodb/mongo-java-driver/3.6.3</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.oak.server/1.2.0</bundle>
@@ -559,13 +559,13 @@
   </feature>
   <!-- Apache Jackrabbit -->
   <feature name="jackrabbit" version="${project.version}">
-    <bundle>mvn:org.apache.jackrabbit/jackrabbit-api/${org.apache.jackrabbit.version}</bundle>
-    <bundle>mvn:org.apache.jackrabbit/jackrabbit-data/${org.apache.jackrabbit.version}</bundle>
-    <bundle>mvn:org.apache.jackrabbit/jackrabbit-jcr-commons/${org.apache.jackrabbit.version}</bundle>
-    <bundle>mvn:org.apache.jackrabbit/jackrabbit-jcr-rmi/${org.apache.jackrabbit.version}</bundle>
-    <bundle>mvn:org.apache.jackrabbit/jackrabbit-spi/${org.apache.jackrabbit.version}</bundle>
-    <bundle>mvn:org.apache.jackrabbit/jackrabbit-spi-commons/${org.apache.jackrabbit.version}</bundle>
-    <bundle>mvn:org.apache.jackrabbit/jackrabbit-webdav/${org.apache.jackrabbit.version}</bundle>
+    <bundle>mvn:org.apache.jackrabbit/jackrabbit-api/2.16.1</bundle>
+    <bundle>mvn:org.apache.jackrabbit/jackrabbit-data/2.16.1</bundle>
+    <bundle>mvn:org.apache.jackrabbit/jackrabbit-jcr-commons/2.16.1</bundle>
+    <bundle>mvn:org.apache.jackrabbit/jackrabbit-jcr-rmi/2.16.1</bundle>
+    <bundle>mvn:org.apache.jackrabbit/jackrabbit-spi/2.16.1</bundle>
+    <bundle>mvn:org.apache.jackrabbit/jackrabbit-spi-commons/2.16.1</bundle>
+    <bundle>mvn:org.apache.jackrabbit/jackrabbit-webdav/2.16.1</bundle>
     <!-- dependencies -->
     <bundle dependency="true">mvn:javax.jcr/jcr/2.0</bundle>
     <bundle dependency="true">mvn:javax.servlet/javax.servlet-api/3.1.0</bundle>
@@ -584,17 +584,17 @@
     <bundle dependency="true">mvn:org.apache.httpcomponents/httpclient-osgi/4.5.5</bundle>
   </feature>
   <feature name="jackrabbit-oak" version="${project.version}">
-    <bundle>mvn:org.apache.jackrabbit/oak-api/${org.apache.jackrabbit.oak.version}</bundle>
-    <bundle>mvn:org.apache.jackrabbit/oak-blob/${org.apache.jackrabbit.oak.version}</bundle>
-    <bundle>mvn:org.apache.jackrabbit/oak-blob-plugins/${org.apache.jackrabbit.oak.version}</bundle>
-    <bundle>mvn:org.apache.jackrabbit/oak-commons/${org.apache.jackrabbit.oak.version}</bundle>
-    <bundle>mvn:org.apache.jackrabbit/oak-core/${org.apache.jackrabbit.oak.version}</bundle>
-    <bundle>mvn:org.apache.jackrabbit/oak-core-spi/${org.apache.jackrabbit.oak.version}</bundle>
-    <bundle>mvn:org.apache.jackrabbit/oak-jcr/${org.apache.jackrabbit.oak.version}</bundle>
-    <bundle>mvn:org.apache.jackrabbit/oak-query-spi/${org.apache.jackrabbit.oak.version}</bundle>
-    <bundle>mvn:org.apache.jackrabbit/oak-security-spi/${org.apache.jackrabbit.oak.version}</bundle>
-    <bundle>mvn:org.apache.jackrabbit/oak-store-composite/${org.apache.jackrabbit.oak.version}</bundle>
-    <bundle>mvn:org.apache.jackrabbit/oak-store-spi/${org.apache.jackrabbit.oak.version}</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-api/1.8.2</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-blob/1.8.2</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-blob-plugins/1.8.2</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-commons/1.8.2</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-core/1.8.2</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-core-spi/1.8.2</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-jcr/1.8.2</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-query-spi/1.8.2</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-security-spi/1.8.2</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-store-composite/1.8.2</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-store-spi/1.8.2</bundle>
     <!-- dependencies -->
     <feature>scr</feature>
     <feature version="${project.version}">jackrabbit</feature>
@@ -611,8 +611,8 @@
   </feature>
   <!-- Apache Tika -->
   <feature name="tika" version="${project.version}">
-    <bundle>mvn:org.apache.tika/tika-core/${org.apache.tika.version}</bundle>
-    <bundle>mvn:org.apache.tika/tika-parsers/${org.apache.tika.version}</bundle>
+    <bundle>mvn:org.apache.tika/tika-core/1.17</bundle>
+    <bundle>mvn:org.apache.tika/tika-parsers/1.17</bundle>
     <bundle>mvn:org.apache.pdfbox/pdfbox/2.0.8</bundle>
     <bundle>mvn:org.apache.pdfbox/fontbox/2.0.8</bundle>
     <bundle>mvn:org.apache.pdfbox/jempbox/1.8.13</bundle>

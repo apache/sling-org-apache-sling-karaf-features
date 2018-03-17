@@ -37,9 +37,6 @@
 
   <properties>
     <org.apache.karaf.version>4.2.0.M2</org.apache.karaf.version>
-    <org.apache.jackrabbit.version>2.16.1</org.apache.jackrabbit.version>
-    <org.apache.jackrabbit.oak.version>1.8.2</org.apache.jackrabbit.oak.version>
-    <org.apache.tika.version>1.17</org.apache.tika.version>
   </properties>
 
   <scm>
