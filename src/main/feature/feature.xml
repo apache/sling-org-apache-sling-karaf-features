@@ -116,10 +116,10 @@
     <bundle>mvn:org.apache.sling/org.apache.sling.commons.scheduler/2.7.2</bundle>
     <!-- dependencies -->
     <feature>scr</feature>
+    <feature version="${project.version}">sling-commons-metrics</feature>
     <feature version="${project.version}">sling-commons-threads</feature>
     <bundle dependency="true">mvn:javax.servlet/javax.servlet-api/3.1.0</bundle>
     <bundle dependency="true">mvn:org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1</bundle>
-    <bundle dependency="true">mvn:io.dropwizard.metrics/metrics-core/3.2.6</bundle>
   </feature>
   <feature name="sling-commons-threads" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.commons.threads/3.2.16</bundle>
@@ -475,6 +475,7 @@
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.freemarker/1.0.0-SNAPSHOT</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
+    <feature version="${project.version}">sling-adapter</feature>
     <feature version="${project.version}">sling-scripting</feature>
     <bundle dependency="true">mvn:org.freemarker/freemarker/2.3.27-incubating</bundle>
   </feature>
@@ -547,6 +548,7 @@
     <bundle>mvn:org.apache.sling/org.apache.sling.servlets.resolver/2.4.22</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
+    <feature version="${project.version}">sling-scripting</feature>
     <feature version="${project.version}">sling-xss</feature>
   </feature>
   <!-- Apache Sling Starter -->
@@ -597,11 +599,12 @@
     <bundle>mvn:org.apache.jackrabbit/oak-store-spi/1.8.2</bundle>
     <!-- dependencies -->
     <feature>scr</feature>
+    <feature version="${project.version}">sling-commons-metrics</feature>
+    <feature version="${project.version}">sling-commons-threads</feature>
     <feature version="${project.version}">jackrabbit</feature>
     <feature version="${project.version}">tika</feature>
     <bundle dependency="true">mvn:com.google.guava/guava/15.0</bundle>
     <bundle>mvn:org.apache.felix/org.apache.felix.jaas/1.0.2</bundle>
-    <bundle dependency="true">mvn:io.dropwizard.metrics/metrics-core/3.2.6</bundle>
   </feature>
   <feature name="jackrabbit-vault" version="${project.version}">
     <bundle>mvn:org.apache.jackrabbit.vault/org.apache.jackrabbit.vault/3.1.44</bundle>
