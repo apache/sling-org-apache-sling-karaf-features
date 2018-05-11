@@ -448,6 +448,7 @@
     <feature version="${project.version}">sling-adapter</feature>
     <feature version="${project.version}">sling-bundleresource</feature>
     <feature version="${project.version}">sling-discovery-standalone</feature>
+    <feature version="${project.version}">sling-healthcheck</feature>
     <bundle dependency="true">mvn:org.apache.felix/org.apache.felix.prefs/1.1.0</bundle>
     <bundle>mvn:org.apache.felix/org.apache.felix.webconsole.plugins.memoryusage/1.0.8</bundle>
     <bundle>mvn:org.apache.felix/org.apache.felix.webconsole.plugins.packageadmin/1.0.4</bundle>
