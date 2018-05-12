@@ -553,14 +553,14 @@
   </feature>
   <feature name="sling-scripting-thymeleaf" version="${project.version}">
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-scripting_thymeleaf">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-scripting_thymeleaf</config>
-    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.thymeleaf/1.1.1-SNAPSHOT</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.thymeleaf/2.0.0-SNAPSHOT</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-scripting</feature>
     <feature version="${project.version}">sling-i18n</feature>
     <bundle dependency="true">mvn:org.attoparser/attoparser/2.0.5.RELEASE</bundle>
     <bundle dependency="true">mvn:org.unbescape/unbescape/1.1.6.RELEASE</bundle>
-    <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.ognl/3.2.6_1</bundle>
+    <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.ognl/3.2.1_1</bundle>
     <bundle dependency="true">mvn:org.javassist/javassist/3.22.0-GA</bundle>
   </feature>
   <!-- Apache Sling Servlets -->
