@@ -94,7 +94,7 @@
     <bundle dependency="true">mvn:org.apache.commons/commons-lang3/3.7</bundle>
   </feature>
   <feature name="sling-commons-html" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.commons.html/1.0.1-SNAPSHOT</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.commons.html/1.0.2</bundle>
     <!-- dependencies -->
     <feature>scr</feature>
     <bundle dependency="true">mvn:org.apache.sling/org.apache.sling.commons.osgi/2.4.0</bundle>
