@@ -36,10 +36,10 @@
   </feature>
   <!-- Apache Sling -->
   <feature name="sling" version="${project.version}">
-    <config external="true"
-      name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-resourceresolver">
+    <configfile
+      finalname="etc/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-resourceresolver.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-resourceresolver
-    </config>
+    </configfile>
     <bundle>mvn:org.apache.sling/org.apache.sling.api/2.18.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.auth.core/1.4.2</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.engine/2.6.12</bundle>
@@ -193,14 +193,13 @@
     <bundle dependency="true">mvn:org.apache.httpcomponents/httpclient-osgi/4.5.5</bundle>
   </feature>
   <feature name="sling-discovery-oak" version="${project.version}">
-    <config external="true"
-      name="org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_discovery">
+    <configfile
+      finalname="etc/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_discovery.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_discovery
-    </config>
-    <config external="true"
-      name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-discovery">
+    </configfile>
+    <configfile finalname="etc/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-discovery.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-discovery
-    </config>
+    </configfile>
     <bundle>mvn:org.apache.sling/org.apache.sling.discovery.base/2.0.8</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.discovery.commons/1.0.20</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.discovery.oak/1.2.22</bundle>
@@ -235,13 +234,12 @@
     <bundle dependency="true">mvn:org.apache.httpcomponents/httpclient-osgi/4.5.5</bundle>
   </feature>
   <feature name="sling-event" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_event">
+    <configfile finalname="etc/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_event.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_event
-    </config>
-    <config external="true"
-      name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-event">
+    </configfile>
+    <configfile finalname="etc/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-event.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-event
-    </config>
+    </configfile>
     <bundle>mvn:org.apache.sling/org.apache.sling.event/4.2.10</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.event.dea/1.1.2</bundle>
     <!-- dependencies -->
@@ -275,13 +273,12 @@
     <feature version="${project.version}">sling-scripting</feature>
   </feature>
   <feature name="sling-i18n" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_i18n">
+    <configfile finalname="etc/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_i18n.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_i18n
-    </config>
-    <config external="true"
-      name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-i18n">
+    </configfile>
+    <configfile finalname="etc/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-i18n.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-i18n
-    </config>
+    </configfile>
     <bundle>mvn:org.apache.sling/org.apache.sling.i18n/2.5.14</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -310,14 +307,12 @@
     <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-databind/2.9.5</bundle>
   </feature>
   <feature name="sling-pipes" version="${project.version}">
-    <config external="true"
-      name="org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_pipes">
+    <configfile finalname="etc/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_pipes.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_pipes
-    </config>
-    <config external="true"
-      name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-pipes">
+    </configfile>
+    <configfile finalname="etc/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-pipes.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-pipes
-    </config>
+    </configfile>
     <bundle>mvn:org.apache.sling/org.apache.sling.pipes/2.0.2</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -339,10 +334,9 @@
     <bundle dependency="true">mvn:org.apache.felix/org.apache.felix.inventory/1.0.6</bundle>
   </feature>
   <feature name="sling-resource-presence" version="${project.version}">
-    <config external="true"
-      name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-resource_presence">
+    <configfile finalname="etc/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-resource_presence.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-resource_presence
-    </config>
+    </configfile>
     <bundle>mvn:org.apache.sling/org.apache.sling.resource.presence/0.0.2</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -353,14 +347,12 @@
     <feature version="${project.version}">sling</feature>
   </feature>
   <feature name="sling-rewriter" version="${project.version}">
-    <config external="true"
-      name="org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_rewriter">
+    <configfile finalname="etc/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_rewriter.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_rewriter
-    </config>
-    <config external="true"
-      name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-rewriter">
+    </configfile>
+    <configfile finalname="etc/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-rewriter.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-rewriter
-    </config>
+    </configfile>
 
     <bundle>mvn:org.apache.sling/org.apache.sling.rewriter/1.2.2</bundle>
     <!-- dependencies -->
@@ -384,14 +376,12 @@
     </bundle>
   </feature>
   <feature name="sling-validation" version="${project.version}">
-    <config external="true"
-      name="org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_validation">
+    <configfile finalname="etc/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_validation.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_validation
-    </config>
-    <config external="true"
-      name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-validation">
+    </configfile>
+    <configfile finalname="etc/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-validation.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-validation
-    </config>
+    </configfile>
     <bundle>mvn:org.apache.sling/org.apache.sling.validation.api/1.0.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.validation.core/1.0.4</bundle>
     <!-- dependencies -->
@@ -400,13 +390,12 @@
     <feature version="${project.version}">sling-servlets</feature>
   </feature>
   <feature name="sling-xss" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_xss">
+    <configfile finalname="etc/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_xss.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_xss
-    </config>
-    <config external="true"
-      name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-xss">
+    </configfile>
+    <configfile finalname="etc/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-xss.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-xss
-    </config>
+    </configfile>
     <bundle>mvn:org.apache.sling/org.apache.sling.xss/2.0.6</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -435,14 +424,12 @@
     <feature version="${project.version}">sling-installer</feature>
   </feature>
   <feature name="sling-installer-provider-jcr" version="${project.version}">
-    <config external="true"
-      name="org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_installer_jcr">
+    <configfile finalname="etc/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_installer_jcr.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_installer_jcr
-    </config>
-    <config external="true"
-      name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-installer_jcr">
+    </configfile>
+    <configfile finalname="etc/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-installer_jcr.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-installer_jcr
-    </config>
+    </configfile>
     <bundle>mvn:org.apache.sling/org.apache.sling.installer.provider.jcr/3.1.26</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling-installer</feature>
@@ -450,17 +437,15 @@
   </feature>
   <!-- Apache Sling JCR -->
   <feature name="sling-jcr" version="${project.version}">
-    <config external="true"
-      name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-sling">
+    <configfile finalname="etc/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-sling.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-sling
-    </config>
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer-sling">
+    </configfile>
+    <configfile finalname="etc/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling
-    </config>
-    <config external="true"
-      name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-jcr_resource">
+    </configfile>
+    <configfile finalname="etc/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-jcr_resource.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-jcr_resource
-    </config>
+    </configfile>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.api/2.4.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.base/3.0.4</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.classloader/3.2.2</bundle>
@@ -524,55 +509,55 @@
   </feature>
   <!-- Apache Sling Quickstart -->
   <feature name="sling-quickstart-nosql-couchbase" version="${project.version}">
-    <config external="true"
-      name="org.apache.sling.nosql.couchbase.resourceprovider.CouchbaseNoSqlResourceProviderFactory.factory.config-default">
+    <configfile override="true"
+      finalname="etc/org.apache.sling.nosql.couchbase.resourceprovider.CouchbaseNoSqlResourceProviderFactory.factory.config-default.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.nosql.couchbase.resourceprovider.CouchbaseNoSqlResourceProviderFactory.factory.config-default
-    </config>
-    <config external="true"
-      name="org.apache.sling.nosql.couchbase.client.CouchbaseClient.factory.config-default">
+    </configfile>
+    <configfile override="true"
+      finalname="etc/org.apache.sling.nosql.couchbase.client.CouchbaseClient.factory.config-default.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.nosql.couchbase.client.CouchbaseClient.factory.config-default
-    </config>
+    </configfile>
     <!-- dependencies -->
     <feature version="${project.version}">sling-nosql-couchbase</feature>
   </feature>
   <feature name="sling-quickstart-nosql-mongodb" version="${project.version}">
-    <config external="true"
-      name="org.apache.sling.nosql.mongodb.resourceprovider.MongoDBNoSqlResourceProviderFactory.factory.config-default">
+    <configfile override="true"
+      finalname="etc/org.apache.sling.nosql.mongodb.resourceprovider.MongoDBNoSqlResourceProviderFactory.factory.config-default.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.nosql.mongodb.resourceprovider.MongoDBNoSqlResourceProviderFactory.factory.config-default
-    </config>
+    </configfile>
     <!-- dependencies -->
     <feature version="${project.version}">sling-nosql-mongodb</feature>
   </feature>
   <feature name="sling-quickstart-oak" version="${project.version}"><!-- hidden="true" -->
     <!-- Sling with Oak Repository and Felix Web Console -->
     <!-- http://jackrabbit.apache.org/oak/docs/osgi_config.html -->
-    <config external="true" name="org.apache.felix.jaas.Configuration.factory-GuestLoginModule">
+    <configfile override="true" finalname="etc/org.apache.felix.jaas.Configuration.factory-GuestLoginModule.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.felix.jaas.Configuration.factory-GuestLoginModule
-    </config>
-    <config external="true" name="org.apache.felix.jaas.Configuration.factory-LoginModuleImpl">
+    </configfile>
+    <configfile override="true" finalname="etc/org.apache.felix.jaas.Configuration.factory-LoginModuleImpl.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.felix.jaas.Configuration.factory-LoginModuleImpl
-    </config>
-    <config external="true" name="org.apache.felix.jaas.Configuration.factory-TokenLoginModule">
+    </configfile>
+    <configfile override="true" finalname="etc/org.apache.felix.jaas.Configuration.factory-TokenLoginModule.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.felix.jaas.Configuration.factory-TokenLoginModule
-    </config>
-    <config external="true" name="org.apache.felix.jaas.ConfigurationSpi">
+    </configfile>
+    <configfile override="true" finalname="etc/org.apache.felix.jaas.ConfigurationSpi.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.felix.jaas.ConfigurationSpi
-    </config>
-    <config external="true"
-      name="org.apache.jackrabbit.oak.security.authentication.AuthenticationConfigurationImpl">
+    </configfile>
+    <configfile override="true"
+      finalname="etc/org.apache.jackrabbit.oak.security.authentication.AuthenticationConfigurationImpl.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.jackrabbit.oak.security.authentication.AuthenticationConfigurationImpl
-    </config>
-    <config external="true" name="org.apache.jackrabbit.oak.security.user.UserConfigurationImpl">
+    </configfile>
+    <configfile override="true" finalname="etc/org.apache.jackrabbit.oak.security.user.UserConfigurationImpl.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.jackrabbit.oak.security.user.UserConfigurationImpl
-    </config>
-    <config external="true"
-      name="org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName">
+    </configfile>
+    <configfile override="true"
+      finalname="etc/org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName
-    </config>
-    <config external="true"
-      name="org.apache.jackrabbit.oak.spi.security.user.action.DefaultAuthorizableActionProvider">
+    </configfile>
+    <configfile override="true"
+      finalname="etc/org.apache.jackrabbit.oak.spi.security.user.action.DefaultAuthorizableActionProvider.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.jackrabbit.oak.spi.security.user.action.DefaultAuthorizableActionProvider
-    </config>
+    </configfile>
     <!-- dependencies -->
     <feature>webconsole</feature>
     <feature version="${project.version}">sling</feature>
@@ -590,13 +575,13 @@
     <bundle>mvn:org.apache.felix/org.apache.felix.webconsole.plugins.packageadmin/1.0.4</bundle>
   </feature>
   <feature name="sling-quickstart-oak-tar" version="${project.version}">
-    <config external="true"
-      name="org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService">
+    <configfile override="true"
+      finalname="etc/org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService
-    </config>
-    <config external="true" name="org.apache.jackrabbit.oak.segment.SegmentNodeStoreService">
+    </configfile>
+    <configfile override="true" finalname="etc/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
-    </config>
+    </configfile>
     <feature version="${project.version}">sling-quickstart-oak</feature>
     <bundle>mvn:org.apache.jackrabbit/oak-lucene/1.8.4</bundle>
     <bundle>mvn:org.apache.jackrabbit/oak-segment-tar/1.8.4</bundle>
@@ -614,14 +599,14 @@
     </capability>
   </feature>
   <feature name="sling-quickstart-oak-mongo" version="${project.version}">
-    <config external="true"
-      name="org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService">
+    <configfile override="true"
+      finalname="etc/org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService
-    </config>
-    <config external="true"
-      name="org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService">
+    </configfile>
+    <configfile override="true"
+      finalname="etc/org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService
-    </config>
+    </configfile>
     <feature version="${project.version}">sling-quickstart-oak</feature>
     <bundle>mvn:org.apache.jackrabbit/oak-lucene/1.8.4</bundle>
     <bundle>mvn:org.apache.jackrabbit/oak-store-document/1.8.4</bundle>
@@ -637,14 +622,14 @@
   </feature>
   <!-- Apache Sling Scripting -->
   <feature name="sling-scripting" version="${project.version}">
-    <config external="true"
-      name="org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_scripting">
+    <configfile override="true"
+      finalname="etc/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_scripting.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_scripting
-    </config>
-    <config external="true"
-      name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-scripting">
+    </configfile>
+    <configfile override="true"
+      finalname="etc/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-scripting.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-scripting
-    </config>
+    </configfile>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.api/2.2.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.core/2.0.54</bundle>
     <!-- dependencies -->
@@ -692,10 +677,10 @@
     <feature version="${project.version}">sling-commons-compiler</feature>
   </feature>
   <feature name="sling-scripting-sightly" version="${project.version}">
-    <config external="true"
-      name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-scripting_sightly">
+    <configfile override="true"
+      finalname="etc/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-scripting_sightly.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-scripting_sightly
-    </config>
+    </configfile>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly/1.0.52-1.3.1</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.compiler/1.0.20-1.3.1</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.compiler.java/1.0.22-1.3.1
@@ -716,10 +701,10 @@
     </bundle>
   </feature>
   <feature name="sling-scripting-thymeleaf" version="${project.version}">
-    <config external="true"
-      name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-scripting_thymeleaf">
+    <configfile override="true"
+      finalname="etc/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-scripting_thymeleaf.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-scripting_thymeleaf
-    </config>
+    </configfile>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.thymeleaf/1.1.0</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -734,10 +719,10 @@
   </feature>
   <!-- Apache Sling Servlets -->
   <feature name="sling-servlets" version="${project.version}">
-    <config external="true"
-      name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-servlets">
+    <configfile override="true"
+      finalname="etc/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-servlets.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-servlets
-    </config>
+    </configfile>
     <bundle>mvn:org.apache.sling/org.apache.sling.servlets.get/2.1.30</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.servlets.post/2.3.24</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.servlets.resolver/2.4.22</bundle>
@@ -843,10 +828,10 @@
   </feature>
   <!-- Composum -->
   <feature name="composum" version="${project.version}">
-    <config external="true"
-      name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-composum">
+    <configfile override="true"
+      finalname="etc/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-composum.cfg">
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-composum
-    </config>
+    </configfile>
     <bundle>mvn:com.composum.sling.core/composum-sling-core-commons/1.8.3</bundle>
     <bundle>mvn:com.composum.sling.core/composum-sling-core-config/1.8.3</bundle>
     <bundle>mvn:com.composum.sling.core/composum-sling-core-console/1.8.3</bundle>
