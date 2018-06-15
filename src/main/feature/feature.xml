@@ -298,6 +298,7 @@
     <feature version="${project.version}">sling</feature>
   </feature>
   <feature name="sling-rewriter" version="${project.version}">
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-rewriter">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-rewriter</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.rewriter/1.2.2</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
