@@ -79,7 +79,7 @@
   </feature>
   <!-- Apache Sling Auth -->
   <feature name="sling-auth-form" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.auth.form/1.0.8</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.auth.form/1.0.10</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <bundle dependency="true">mvn:javax.jcr/jcr/2.0</bundle>
@@ -175,6 +175,18 @@
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
   </feature>
+  <feature name="sling-caconfig" version="${project.version}">
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_caconfig">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_caconfig</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-caconfig">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-caconfig</config>
+    <bundle>mvn:org.apache.sling/org.apache.sling.caconfig.api/1.1.0</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.caconfig.impl/1.4.12</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.caconfig.spi/1.3.2</bundle>
+    <!-- dependencies -->
+    <feature version="${project.version}">sling</feature>
+    <feature version="${project.version}">sling-scripting</feature>
+    <feature version="${project.version}">sling-xss</feature>
+    <feature>webconsole</feature>
+  </feature>
   <feature name="sling-discovery" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.discovery.api/1.0.4</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.discovery.support/1.0.4</bundle>
@@ -258,9 +270,9 @@
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">jackrabbit-vault</feature>
     <bundle dependency="true">mvn:javax.jcr/jcr/2.0</bundle>
-    <bundle dependency="true">mvn:org.apache.jackrabbit/jackrabbit-api/2.16.1</bundle>
-    <bundle dependency="true">mvn:org.apache.jackrabbit/jackrabbit-jcr-commons/2.16.1</bundle>
     <bundle dependency="true">mvn:com.google.guava/guava/15.0</bundle>
+    <bundle dependency="true">mvn:org.apache.jackrabbit/jackrabbit-api/2.16.2</bundle>
+    <bundle dependency="true">mvn:org.apache.jackrabbit/jackrabbit-jcr-commons/2.16.2</bundle>
   </feature>
   <feature name="sling-healthcheck" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.hc.api/1.0.2</bundle>
@@ -302,9 +314,9 @@
     <bundle>mvn:org.apache.sling/org.apache.sling.models.jacksonexporter/1.0.8</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling-models</feature>
-    <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-annotations/2.9.5</bundle>
-    <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-core/2.9.5</bundle>
-    <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-databind/2.9.5</bundle>
+    <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-annotations/2.9.6</bundle>
+    <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-core/2.9.6</bundle>
+    <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-databind/2.9.6</bundle>
   </feature>
   <feature name="sling-pipes" version="${project.version}">
     <configfile finalname="etc/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_pipes.cfg">
@@ -322,7 +334,7 @@
     <feature version="${project.version}">sling-query</feature>
   </feature>
   <feature name="sling-query" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.query/4.0.0</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.query/4.0.2</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <bundle dependency="true">mvn:javax.jcr/jcr/2.0</bundle>
@@ -347,13 +359,7 @@
     <feature version="${project.version}">sling</feature>
   </feature>
   <feature name="sling-rewriter" version="${project.version}">
-    <configfile finalname="etc/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_rewriter.cfg">
-      mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_rewriter
-    </configfile>
-    <configfile finalname="etc/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-rewriter.cfg">
-      mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-rewriter
-    </configfile>
-
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-rewriter">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-rewriter</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.rewriter/1.2.2</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -505,7 +511,7 @@
     <bundle>mvn:org.apache.sling/org.apache.sling.nosql.mongodb-resourceprovider/1.1.0</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling-nosql-generic</feature>
-    <bundle dependency="true">mvn:org.mongodb/mongo-java-driver/3.7.0</bundle>
+    <bundle dependency="true">mvn:org.mongodb/mongo-java-driver/3.7.1</bundle>
   </feature>
   <!-- Apache Sling Quickstart -->
   <feature name="sling-quickstart-nosql-couchbase" version="${project.version}">
@@ -611,7 +617,7 @@
     <bundle>mvn:org.apache.jackrabbit/oak-lucene/1.8.4</bundle>
     <bundle>mvn:org.apache.jackrabbit/oak-store-document/1.8.4</bundle>
     <bundle>mvn:com.h2database/h2-mvstore/1.4.197</bundle>
-    <bundle>mvn:org.mongodb/mongo-java-driver/3.7.0</bundle>
+    <bundle>mvn:org.mongodb/mongo-java-driver/3.7.1</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.oak.server/1.2.0</bundle>
     <!-- capabilities -->
     <!-- OAK-7380 Add missing OSGi capabilities -->
@@ -649,9 +655,9 @@
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-scripting</feature>
-    <bundle dependency="true">mvn:org.codehaus.groovy/groovy/2.4.15</bundle>
-    <bundle dependency="true">mvn:org.codehaus.groovy/groovy-json/2.4.15</bundle>
-    <bundle dependency="true">mvn:org.codehaus.groovy/groovy-templates/2.4.15</bundle>
+    <bundle dependency="true">mvn:org.codehaus.groovy/groovy/2.5.0</bundle>
+    <bundle dependency="true">mvn:org.codehaus.groovy/groovy-json/2.5.0</bundle>
+    <bundle dependency="true">mvn:org.codehaus.groovy/groovy-templates/2.5.0</bundle>
   </feature>
   <feature name="sling-scripting-java" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.java/2.1.2</bundle>
@@ -665,16 +671,15 @@
     <!-- dependencies -->
     <feature version="${project.version}">sling-scripting</feature>
     <bundle dependency="true">mvn:javax.jcr/jcr/2.0</bundle>
-    <bundle dependency="true">
-      mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.rhino/1.7.9_1
-    </bundle>
+    <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.rhino/1.7.10_1</bundle>
   </feature>
   <feature name="sling-scripting-jsp" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.jsp/2.3.4</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.jsp.taglib/2.2.6</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.jsp.taglib/2.3.0</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling-scripting</feature>
     <feature version="${project.version}">sling-commons-compiler</feature>
+    <feature version="${project.version}">sling-caconfig</feature>
   </feature>
   <feature name="sling-scripting-sightly" version="${project.version}">
     <configfile override="true"
@@ -696,9 +701,7 @@
     <feature version="${project.version}">sling-models</feature>
     <feature version="${project.version}">sling-xss</feature>
     <feature version="${project.version}">sling-commons-compiler</feature>
-    <bundle dependency="true">
-      mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.rhino/1.7.9_1
-    </bundle>
+    <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.rhino/1.7.10_1</bundle>
   </feature>
   <feature name="sling-scripting-thymeleaf" version="${project.version}">
     <configfile override="true"
@@ -710,6 +713,8 @@
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-scripting</feature>
     <feature version="${project.version}">sling-i18n</feature>
+    <feature prerequisite="true">wrap</feature>
+    <bundle dependency="true">wrap:mvn:org.thymeleaf/thymeleaf/3.0.9.RELEASE</bundle>
     <bundle dependency="true">mvn:org.attoparser/attoparser/2.0.5.RELEASE</bundle>
     <bundle dependency="true">mvn:org.unbescape/unbescape/1.1.6.RELEASE</bundle>
     <bundle dependency="true">
@@ -724,7 +729,7 @@
       mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-servlets
     </configfile>
     <bundle>mvn:org.apache.sling/org.apache.sling.servlets.get/2.1.30</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.servlets.post/2.3.24</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.servlets.post/2.3.26</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.servlets.resolver/2.4.22</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -741,13 +746,13 @@
   </feature>
   <!-- Apache Jackrabbit -->
   <feature name="jackrabbit" version="${project.version}">
-    <bundle>mvn:org.apache.jackrabbit/jackrabbit-api/2.16.1</bundle>
-    <bundle>mvn:org.apache.jackrabbit/jackrabbit-data/2.16.1</bundle>
-    <bundle>mvn:org.apache.jackrabbit/jackrabbit-jcr-commons/2.16.1</bundle>
-    <bundle>mvn:org.apache.jackrabbit/jackrabbit-jcr-rmi/2.16.1</bundle>
-    <bundle>mvn:org.apache.jackrabbit/jackrabbit-spi/2.16.1</bundle>
-    <bundle>mvn:org.apache.jackrabbit/jackrabbit-spi-commons/2.16.1</bundle>
-    <bundle>mvn:org.apache.jackrabbit/jackrabbit-webdav/2.16.1</bundle>
+    <bundle>mvn:org.apache.jackrabbit/jackrabbit-api/2.16.2</bundle>
+    <bundle>mvn:org.apache.jackrabbit/jackrabbit-data/2.16.2</bundle>
+    <bundle>mvn:org.apache.jackrabbit/jackrabbit-jcr-commons/2.16.2</bundle>
+    <bundle>mvn:org.apache.jackrabbit/jackrabbit-jcr-rmi/2.16.2</bundle>
+    <bundle>mvn:org.apache.jackrabbit/jackrabbit-spi/2.16.2</bundle>
+    <bundle>mvn:org.apache.jackrabbit/jackrabbit-spi-commons/2.16.2</bundle>
+    <bundle>mvn:org.apache.jackrabbit/jackrabbit-webdav/2.16.2</bundle>
     <!-- dependencies -->
     <bundle dependency="true">mvn:javax.jcr/jcr/2.0</bundle>
     <bundle dependency="true">mvn:javax.servlet/javax.servlet-api/3.1.0</bundle>
