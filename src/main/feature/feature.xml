@@ -74,6 +74,12 @@
     <feature version="${project.version}">sling-auth-openid</feature>
   </feature>
   <!-- Apache Sling Commons -->
+  <feature name="sling-commons-clam" version="${project.version}">
+    <bundle>mvn:org.apache.sling/org.apache.sling.commons.clam/1.0.0-SNAPSHOT</bundle>
+    <!-- dependencies -->
+    <feature>scr</feature>
+    <bundle dependency="true">mvn:commons-io/commons-io/2.6</bundle>
+  </feature>
   <feature name="sling-commons-compiler" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.commons.compiler/2.3.6</bundle>
     <!-- dependencies -->
