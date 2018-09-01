@@ -161,6 +161,16 @@
     <feature version="${project.version}">sling-xss</feature>
     <feature>webconsole</feature>
   </feature>
+  <feature name="sling-clam" version="${project.version}">
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_clam">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_clam</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-clam">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-clam</config>
+    <bundle>mvn:org.apache.sling/org.apache.sling.clam/1.0.0-SNAPSHOT</bundle>
+    <!-- dependencies -->
+    <feature version="${project.version}">sling</feature>
+    <feature version="${project.version}">sling-commons-clam</feature>
+    <feature version="${project.version}">sling-event</feature>
+    <feature version="${project.version}">sling-jcr</feature>
+  </feature>
   <feature name="sling-discovery" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.discovery.api/1.0.4</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.discovery.support/1.0.4</bundle>
