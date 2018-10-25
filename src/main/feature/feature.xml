@@ -268,7 +268,7 @@
   </feature>
   <feature name="sling-models" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.models.api/1.3.6</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.models.impl/1.4.9-SNAPSHOT</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.models.impl/1.4.10</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-scripting</feature>
@@ -608,7 +608,7 @@
   </feature>
   <!-- Apache Sling Starter -->
   <feature name="sling-starter-content" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.starter.content/1.0.0</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.starter.content/1.0.2</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-auth-form</feature>
@@ -680,10 +680,10 @@
   </feature>
   <!-- Apache Tika -->
   <feature name="tika" version="${project.version}">
-    <bundle>mvn:org.apache.tika/tika-core/1.19</bundle>
-    <bundle>mvn:org.apache.tika/tika-parsers/1.19</bundle>
-    <bundle>mvn:org.apache.pdfbox/pdfbox/2.0.11</bundle>
-    <bundle>mvn:org.apache.pdfbox/fontbox/2.0.11</bundle>
+    <bundle>mvn:org.apache.tika/tika-core/1.19.1</bundle>
+    <bundle>mvn:org.apache.tika/tika-parsers/1.19.1</bundle>
+    <bundle>mvn:org.apache.pdfbox/pdfbox/2.0.12</bundle>
+    <bundle>mvn:org.apache.pdfbox/fontbox/2.0.12</bundle>
     <bundle>mvn:org.apache.pdfbox/jempbox/1.8.16</bundle>
   </feature>
   <!-- Apache Sling Samples -->
