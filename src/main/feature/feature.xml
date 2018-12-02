@@ -177,17 +177,6 @@
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
   </feature>
-  <feature name="sling-discovery-impl" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.discovery.base/2.0.8</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.discovery.commons/1.0.20</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.discovery.impl/1.2.13-SNAPSHOT</bundle>
-    <!-- dependencies -->
-    <feature>webconsole</feature>
-    <feature version="${project.version}">sling-discovery</feature>
-    <bundle dependency="true">mvn:javax.jcr/jcr/2.0</bundle>
-    <bundle dependency="true">mvn:org.apache.httpcomponents/httpcore-osgi/4.4.10</bundle>
-    <bundle dependency="true">mvn:org.apache.httpcomponents/httpclient-osgi/4.5.6</bundle>
-  </feature>
   <feature name="sling-discovery-oak" version="${project.version}">
     <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_discovery">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_discovery</config>
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-discovery">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-discovery</config>
