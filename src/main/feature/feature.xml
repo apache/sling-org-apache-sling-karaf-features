@@ -62,11 +62,6 @@
     <feature version="${project.version}">sling</feature>
     <bundle dependency="true">mvn:javax.jcr/jcr/2.0</bundle>
   </feature>
-  <feature name="sling-auth-openid" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.auth.openid/1.0.4</bundle>
-    <!-- dependencies -->
-    <feature version="${project.version}">sling</feature>
-  </feature>
   <!-- Apache Sling Commons -->
   <feature name="sling-commons-clam" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.commons.clam/1.0.2</bundle>
