@@ -50,7 +50,7 @@
     <bundle dependency="true">mvn:org.apache.commons/commons-lang3/3.8.1</bundle>
     <bundle dependency="true">mvn:org.apache.commons/commons-math/2.2</bundle>
     <!-- capabilities -->
-    <!-- https://github.com/bndtools/bnd/issues/2429 -->
+    <!-- https://issues.apache.org/jira/browse/SLING-8178 -->
     <capability>
       osgi.service;objectClass=org.osgi.service.event.EventHandler
     </capability>
