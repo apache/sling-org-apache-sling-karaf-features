@@ -223,11 +223,10 @@
     <bundle dependency="true">mvn:org.apache.jackrabbit/jackrabbit-jcr-commons/2.18.0</bundle>
   </feature>
   <feature name="sling-healthcheck" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.hc.api/1.0.2</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.hc.core/1.2.10</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.hc.support/1.0.4</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.hc.webconsole/1.1.2</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.hc.api/1.0.4</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.hc.support/1.0.6</bundle>
     <!-- dependencies -->
+    <feature version="${project.version}">felix-healthcheck</feature>
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-jcr</feature>
     <feature version="${project.version}">sling-scripting</feature>
@@ -593,6 +592,17 @@
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-auth-form</feature>
     <feature version="${project.version}">composum</feature>
+  </feature>
+  <!-- Apache Felix Healthcheck -->
+  <feature name="felix-healthcheck" version="${project.version}">
+    <bundle>mvn:org.apache.felix/org.apache.felix.healthcheck.api/2.0.2</bundle>
+    <bundle>mvn:org.apache.felix/org.apache.felix.healthcheck.core/2.0.6</bundle>
+    <bundle>mvn:org.apache.felix/org.apache.felix.healthcheck.generalchecks/2.0.4</bundle>
+    <bundle>mvn:org.apache.felix/org.apache.felix.healthcheck.webconsoleplugin/2.0.0</bundle>
+    <!-- dependencies -->
+    <feature>scr</feature>
+    <feature>webconsole</feature>
+    <bundle dependency="true">mvn:org.apache.commons/commons-lang3/3.9</bundle>
   </feature>
   <!-- Apache Jackrabbit -->
   <feature name="jackrabbit" version="${project.version}">
