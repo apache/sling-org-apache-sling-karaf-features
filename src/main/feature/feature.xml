@@ -698,6 +698,7 @@
     <bundle>mvn:com.composum.sling.core/composum-sling-package-manager/1.11.4</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
+    <feature version="${project.version}">sling-i18n</feature>
     <feature version="${project.version}">sling-jcr</feature>
     <feature version="${project.version}">sling-scripting-jsp</feature>
     <feature version="${project.version}">sling-servlets</feature>
