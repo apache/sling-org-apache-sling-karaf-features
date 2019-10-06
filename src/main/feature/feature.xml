@@ -300,7 +300,7 @@
     <feature version="${project.version}">sling</feature>
   </feature>
   <feature name="sling-extensions-threaddump" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.extensions.threaddump/0.2.2</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.commons.threaddump/0.2.3-SNAPSHOT</bundle>
   </feature>
   <feature name="sling-urlrewriter" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.urlrewriter/0.0.2</bundle>
@@ -375,7 +375,7 @@
     <feature version="${project.version}">tika</feature>
   </feature>
   <feature name="sling-jcr-compiler" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.jcr.compiler/2.1.0</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.commons.compiler/2.3.7-SNAPSHOT</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-jcr</feature>
