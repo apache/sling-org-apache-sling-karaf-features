@@ -559,14 +559,10 @@
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-scripting_thymeleaf">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-scripting_thymeleaf</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.thymeleaf/2.0.2</bundle>
     <!-- dependencies -->
+    <feature version="${project.version}">thymeleaf</feature>
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-scripting</feature>
     <feature version="${project.version}">sling-i18n</feature>
-    <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.thymeleaf/3.0.11.RELEASE_1</bundle>
-    <bundle dependency="true">mvn:org.attoparser/attoparser/2.0.5.RELEASE</bundle>
-    <bundle dependency="true">mvn:org.unbescape/unbescape/1.1.6.RELEASE</bundle>
-    <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.ognl/3.2.1_1</bundle>
-    <bundle dependency="true">mvn:org.javassist/javassist/3.26.0-GA</bundle>
   </feature>
   <!-- Apache Sling Servlets -->
   <feature name="sling-servlets" version="${project.version}">
@@ -701,5 +697,13 @@
     <feature version="${project.version}">sling-servlets</feature>
     <feature version="${project.version}">sling-event</feature>
     <feature version="${project.version}">jackrabbit-vault</feature>
+  </feature>
+  <!-- Thymeleaf -->
+  <feature name="thymeleaf" version="${project.version}">
+    <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.thymeleaf/3.0.11.RELEASE_1</bundle>
+    <bundle dependency="true">mvn:org.attoparser/attoparser/2.0.5.RELEASE</bundle>
+    <bundle dependency="true">mvn:org.unbescape/unbescape/1.1.6.RELEASE</bundle>
+    <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.ognl/3.2.1_1</bundle>
+    <bundle dependency="true">mvn:org.javassist/javassist/3.26.0-GA</bundle>
   </feature>
 </features>
