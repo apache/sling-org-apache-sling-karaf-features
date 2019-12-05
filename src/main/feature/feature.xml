@@ -586,7 +586,7 @@
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-auth-form</feature>
     <feature version="${project.version}">sling-scripting-javascript</feature>
-    <feature version="${project.version}">composum</feature>
+    <feature version="${project.version}">composum-nodes</feature>
   </feature>
   <!-- Apache Felix Healthcheck -->
   <feature name="felix-healthcheck" version="${project.version}">
@@ -685,8 +685,8 @@
     <feature version="${project.version}">sling-auth-form</feature>
   </feature>
   <!-- Composum -->
-  <feature name="composum" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-composum">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-composum</config>
+  <feature name="composum-nodes" version="${project.version}">
+    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-composum_nodes">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-composum_nodes</config>
     <bundle>mvn:com.composum.sling.core/composum-sling-core-commons/1.11.5</bundle>
     <bundle>mvn:com.composum.sling.core/composum-sling-core-config/1.11.5</bundle>
     <bundle>mvn:com.composum.sling.core/composum-sling-core-console/1.11.5</bundle>
