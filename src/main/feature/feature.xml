@@ -75,6 +75,8 @@
   </feature>
   <feature name="sling-commons-crypto" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.commons.crypto/1.0.0-SNAPSHOT</bundle>
+    <!-- dependencies -->
+    <feature>scr</feature>
     <bundle dependency="true">mvn:org.apache.commons/commons-lang3/3.9</bundle>
     <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jasypt/1.9.3_1</bundle>
   </feature>
