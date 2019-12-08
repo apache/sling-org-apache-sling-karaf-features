@@ -674,19 +674,6 @@
     <bundle>mvn:org.apache.pdfbox/jempbox/1.8.16</bundle>
   </feature>
   <!-- Apache Sling Samples -->
-  <feature name="sling-samples-fling" version="${project.version}">
-    <bundle>mvn:org.apache.sling.samples/org.apache.sling.samples.fling/0.0.1-SNAPSHOT</bundle>
-    <!-- dependencies -->
-    <feature version="${project.version}">sling</feature>
-    <feature version="${project.version}">sling-scripting-thymeleaf</feature>
-    <feature version="${project.version}">sling-commons-messaging</feature>
-    <feature version="${project.version}">sling-commons-messaging-mail</feature>
-    <feature version="${project.version}">sling-models</feature>
-    <feature version="${project.version}">sling-query</feature>
-    <feature version="${project.version}">sling-validation</feature>
-    <feature version="${project.version}">sling-installer-provider-jcr</feature>
-    <feature version="${project.version}">sling-auth-form</feature>
-  </feature>
   <!-- Composum -->
   <feature name="composum-nodes" version="${project.version}">
     <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-composum_nodes">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-composum_nodes</config>
