@@ -31,7 +31,6 @@
     <!-- Apache Sling Commons -->
     <bundle>mvn:org.apache.sling/org.apache.sling.commons.johnzon/1.2.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.commons.mime/2.2.2</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.commons.osgi/2.4.0</bundle>
     <!-- dependencies -->
     <feature>config</feature>
     <feature>eventadmin</feature>
@@ -40,6 +39,7 @@
     <feature>http</feature>
     <feature>http-whiteboard</feature>
     <feature version="${project.version}">sling-commons-fsclassloader</feature>
+    <feature version="${project.version}">sling-commons-osgi</feature>
     <feature version="${project.version}">sling-commons-scheduler</feature>
     <feature version="${project.version}">sling-commons-threads</feature>
     <bundle dependency="true">mvn:commons-codec/commons-codec/1.14</bundle>
@@ -88,7 +88,7 @@
     <feature>scr</feature>
     <feature>webconsole</feature>
     <feature version="${project.version}">sling-commons-classloader</feature>
-    <bundle dependency="true">mvn:org.apache.sling/org.apache.sling.commons.osgi/2.4.0</bundle>
+    <feature version="${project.version}">sling-commons-osgi</feature>
     <bundle dependency="true">mvn:commons-io/commons-io/2.6</bundle>
     <bundle dependency="true">mvn:org.apache.commons/commons-lang3/3.10</bundle>
   </feature>
@@ -96,7 +96,7 @@
     <bundle>mvn:org.apache.sling/org.apache.sling.commons.html/1.1.0</bundle>
     <!-- dependencies -->
     <feature>scr</feature>
-    <bundle dependency="true">mvn:org.apache.sling/org.apache.sling.commons.osgi/2.4.0</bundle>
+    <feature version="${project.version}">sling-commons-osgi</feature>
   </feature>
   <feature name="sling-commons-messaging" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.commons.messaging/1.0.0</bundle>
@@ -117,6 +117,10 @@
     <!-- dependencies -->
     <feature>scr</feature>
     <bundle dependency="true">mvn:io.dropwizard.metrics/metrics-core/3.2.6</bundle>
+  </feature>
+  <feature name="sling-commons-osgi" version="${project.version}">
+    <bundle>mvn:org.apache.sling/org.apache.sling.commons.osgi/2.4.0</bundle>
+    <feature>eventadmin</feature>
   </feature>
   <feature name="sling-commons-scheduler" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.commons.scheduler/2.7.6</bundle>
