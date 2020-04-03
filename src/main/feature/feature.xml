@@ -490,13 +490,13 @@
     <bundle dependency="true">mvn:org.freemarker/freemarker/2.3.30</bundle>
   </feature>
   <feature name="sling-scripting-groovy" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.groovy/1.1.0</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.groovy/1.2.0</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-scripting</feature>
-    <bundle dependency="true">mvn:org.codehaus.groovy/groovy/2.5.0</bundle>
-    <bundle dependency="true">mvn:org.codehaus.groovy/groovy-json/2.5.0</bundle>
-    <bundle dependency="true">mvn:org.codehaus.groovy/groovy-templates/2.5.0</bundle>
+    <bundle dependency="true">mvn:org.codehaus.groovy/groovy/3.0.1</bundle>
+    <bundle dependency="true">mvn:org.codehaus.groovy/groovy-json/3.0.1</bundle>
+    <bundle dependency="true">mvn:org.codehaus.groovy/groovy-templates/3.0.1</bundle>
   </feature>
   <feature name="sling-scripting-java" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.java/2.1.2</bundle>
