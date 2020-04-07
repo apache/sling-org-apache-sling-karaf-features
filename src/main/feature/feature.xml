@@ -108,9 +108,10 @@
     <feature version="${project.version}">sling-commons-crypto</feature>
     <feature version="${project.version}">sling-commons-messaging</feature>
     <feature version="${project.version}">sling-commons-threads</feature>
-    <bundle dependency="true">mvn:com.sun.mail/javax.mail/1.6.2</bundle>
-    <bundle dependency="true">mvn:javax.mail/javax.mail-api/1.6.2</bundle>
+    <bundle dependency="true">mvn:com.sun.mail/jakarta.mail/1.6.5</bundle>
+    <bundle dependency="true">mvn:jakarta.mail/jakarta.mail-api/1.6.5</bundle>
     <bundle dependency="true">mvn:org.apache.commons/commons-lang3/3.10</bundle>
+    <bundle dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.activation-api-1.1/2.9.0</bundle>
   </feature>
   <feature name="sling-commons-metrics" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.commons.metrics/1.2.8</bundle>
