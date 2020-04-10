@@ -351,6 +351,13 @@
     <!-- dependencies -->
     <feature version="${project.version}">sling-installer</feature>
   </feature>
+  <feature name="sling-installer-factory-packages" version="${project.version}">
+    <bundle>mvn:org.apache.sling/org.apache.sling.installer.factory.packages/1.0.2</bundle>
+    <!-- dependencies -->
+    <feature version="${project.version}">sling-installer</feature>
+    <feature version="${project.version}">sling-jcr</feature>
+    <feature version="${project.version}">jackrabbit-vault</feature>
+  </feature>
   <feature name="sling-installer-healthcheck" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.installer.hc/2.0.2</bundle>
     <!-- dependencies -->
