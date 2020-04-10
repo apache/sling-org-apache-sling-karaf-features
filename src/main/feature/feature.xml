@@ -439,7 +439,6 @@
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-servlets</feature>
     <!-- ... -->
-    <feature version="${project.version}">sling-installer</feature>
     <feature version="${project.version}">sling-jcr</feature>
     <feature version="${project.version}">sling-jcr-repoinit</feature>
     <feature version="${project.version}">sling-adapter</feature>
