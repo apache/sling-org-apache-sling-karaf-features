@@ -178,6 +178,7 @@
     <feature version="${project.version}">sling</feature>
   </feature>
   <feature name="sling-discovery-oak" version="${project.version}">
+    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-sling_discovery">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-sling_discovery</config>
     <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_discovery">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.repoinit.RepositoryInitializer-sling_discovery</config>
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-discovery">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-discovery</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.discovery.base/2.0.8</bundle>
@@ -367,8 +368,8 @@
   </feature>
   <!-- Apache Sling JCR -->
   <feature name="sling-jcr" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-sling">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-sling</config>
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-jcr_resource">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-jcr_resource</config>
+    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-sling_jcr">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-sling_jcr</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.api/2.4.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.base/3.1.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.contentloader/2.3.0</bundle>
