@@ -1,0 +1,8 @@
+github:
+  description: "Apache Sling - Karaf Features"
+  homepage: "https://sling.apache.org/"
+  labels:
+    - java
+    - sling
+    - osgi
+    - karaf
