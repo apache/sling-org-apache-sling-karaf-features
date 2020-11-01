@@ -35,7 +35,6 @@
     <feature>eventadmin</feature>
     <feature>scr</feature>
     <feature>management</feature>
-    <feature>felix-http</feature>
     <feature version="${project.version}">sling-commons-fsclassloader</feature>
     <feature version="${project.version}">sling-commons-osgi</feature>
     <feature version="${project.version}">sling-commons-scheduler</feature>
