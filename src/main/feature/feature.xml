@@ -683,11 +683,11 @@
   <!-- Composum -->
   <feature name="composum-nodes" version="${project.version}">
     <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~composum_nodes">mvn:org.apache.sling/org.apache.sling.karaf-configs/${project.version}/config/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~composum_nodes</config>
-    <bundle>mvn:com.composum.sling.core/composum-sling-core-commons/1.12.2</bundle>
-    <bundle>mvn:com.composum.sling.core/composum-sling-core-console/1.12.2</bundle>
-    <bundle>mvn:com.composum.sling.core/composum-sling-core-jslibs/1.12.2</bundle>
-    <bundle>mvn:com.composum.sling.core/composum-sling-user-management/1.12.2</bundle>
-    <bundle>mvn:com.composum.sling.core/composum-sling-package-manager/1.12.2</bundle>
+    <bundle>mvn:com.composum.nodes/composum-nodes-commons/2.1.1</bundle>
+    <bundle>mvn:com.composum.nodes/composum-nodes-console/2.1.1</bundle>
+    <bundle>mvn:com.composum.nodes/composum-nodes-jslibs/2.1.1</bundle>
+    <bundle>mvn:com.composum.nodes/composum-nodes-pckgmgr/2.1.1</bundle>
+    <bundle>mvn:com.composum.nodes/composum-nodes-usermgr/2.1.1</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-i18n</feature>
