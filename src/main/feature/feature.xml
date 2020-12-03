@@ -409,6 +409,8 @@
     <feature version="${project.version}">sling-commons-compiler</feature>
   </feature>
   <feature name="sling-jcr-jackrabbit-security" version="${project.version}">
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_jcr_jackrabbit_usermanager">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_jcr_jackrabbit_usermanager.config</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_jcr_jackrabbit_usermanager">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_jcr_jackrabbit_usermanager.config</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.jackrabbit.accessmanager/3.0.8</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.jackrabbit.usermanager/2.2.12</bundle>
     <!-- dependencies -->
