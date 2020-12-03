@@ -433,6 +433,7 @@
     <config external="true" name="org.apache.felix.jaas.Configuration.factory~TokenLoginModule">classpath:org.apache.felix.jaas.Configuration.factory~TokenLoginModule.config</config>
     <config external="true" name="org.apache.felix.jaas.ConfigurationSpi">classpath:org.apache.felix.jaas.ConfigurationSpi.config</config>
     <config external="true" name="org.apache.jackrabbit.oak.security.authentication.AuthenticationConfigurationImpl">classpath:org.apache.jackrabbit.oak.security.authentication.AuthenticationConfigurationImpl.config</config>
+    <config external="true" name="org.apache.jackrabbit.oak.security.authorization.AuthorizationConfigurationImpl">classpath:org.apache.jackrabbit.oak.security.authorization.AuthorizationConfigurationImpl.config</config>
     <config external="true" name="org.apache.jackrabbit.oak.security.user.UserConfigurationImpl">classpath:org.apache.jackrabbit.oak.security.user.UserConfigurationImpl.config</config>
     <config external="true" name="org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName">classpath:org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName.config</config>
     <config external="true" name="org.apache.jackrabbit.oak.spi.security.user.action.DefaultAuthorizableActionProvider">classpath:org.apache.jackrabbit.oak.spi.security.user.action.DefaultAuthorizableActionProvider.config</config>
