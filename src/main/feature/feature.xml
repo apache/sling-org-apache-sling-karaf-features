@@ -434,8 +434,11 @@
     <config external="true" name="org.apache.felix.jaas.ConfigurationSpi">classpath:org.apache.felix.jaas.ConfigurationSpi.config</config>
     <config external="true" name="org.apache.jackrabbit.oak.security.authentication.AuthenticationConfigurationImpl">classpath:org.apache.jackrabbit.oak.security.authentication.AuthenticationConfigurationImpl.config</config>
     <config external="true" name="org.apache.jackrabbit.oak.security.authorization.AuthorizationConfigurationImpl">classpath:org.apache.jackrabbit.oak.security.authorization.AuthorizationConfigurationImpl.config</config>
+    <config external="true" name="org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration">classpath:org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration.config</config>
     <config external="true" name="org.apache.jackrabbit.oak.security.user.UserConfigurationImpl">classpath:org.apache.jackrabbit.oak.security.user.UserConfigurationImpl.config</config>
     <config external="true" name="org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName">classpath:org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName.config</config>
+    <config external="true" name="org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.FilterProviderImpl">classpath:org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.FilterProviderImpl.config</config>
+    <config external="true" name="org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.PrincipalBasedAuthorizationConfiguration">classpath:org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.PrincipalBasedAuthorizationConfiguration.config</config>
     <config external="true" name="org.apache.jackrabbit.oak.spi.security.user.action.DefaultAuthorizableActionProvider">classpath:org.apache.jackrabbit.oak.spi.security.user.action.DefaultAuthorizableActionProvider.config</config>
     <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling.config</config>
     <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_mapping">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_mapping.config</config>
@@ -636,6 +639,7 @@
   </feature>
   <feature name="jackrabbit-oak" version="${project.version}">
     <bundle>mvn:org.apache.jackrabbit/oak-api/1.34.0</bundle>
+    <bundle>mvn:org.apache.jackrabbit/oak-authorization-principalbased/1.34.0</bundle>
     <bundle>mvn:org.apache.jackrabbit/oak-blob/1.34.0</bundle>
     <bundle>mvn:org.apache.jackrabbit/oak-blob-plugins/1.34.0</bundle>
     <bundle>mvn:org.apache.jackrabbit/oak-commons/1.34.0</bundle>
