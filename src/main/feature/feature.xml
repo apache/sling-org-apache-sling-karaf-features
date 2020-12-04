@@ -358,6 +358,8 @@
     <feature version="${project.version}">sling-installer</feature>
   </feature>
   <feature name="sling-installer-factory-packages" version="${project.version}">
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_installer_factory_packages">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_installer_factory_packages.config</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_installer_factory_packages">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_installer_factory_packages.config</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.installer.factory.packages/1.0.4</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling-installer</feature>
