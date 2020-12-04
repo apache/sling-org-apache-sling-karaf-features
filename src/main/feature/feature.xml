@@ -376,8 +376,8 @@
     <feature version="${project.version}">sling-installer</feature>
   </feature>
   <feature name="sling-installer-provider-jcr" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_installer_jcr">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_installer_jcr.config</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_installer_jcr">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_installer_jcr.config</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_installer_provider_jcr">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_installer_provider_jcr.config</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_installer_provider_jcr">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_installer_provider_jcr.config</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.installer.provider.jcr/3.3.0</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling-installer</feature>
