@@ -247,7 +247,6 @@
     <feature version="${project.version}">sling-scripting</feature>
   </feature>
   <feature name="sling-i18n" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_i18n">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_i18n.config</config>
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_i18n">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_i18n.config</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.i18n/2.5.14</bundle>
     <!-- dependencies -->
