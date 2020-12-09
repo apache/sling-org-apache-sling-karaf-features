@@ -583,6 +583,7 @@
   </feature>
   <!-- Apache Sling Servlets -->
   <feature name="sling-servlets" version="${project.version}">
+    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling_servlets">classpath:org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling_servlets.config</config>
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_servlets">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_servlets.config</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.servlets.get/2.1.40</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.servlets.post/2.3.36</bundle>
