@@ -694,7 +694,6 @@
     <bundle>mvn:org.apache.pdfbox/jempbox/1.8.16</bundle>
   </feature>
   <!-- Apache Sling Applications and Samples -->
-  <!--
   <feature name="sling-cms" version="${project.version}">
     <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_cms">classpath:cms/org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_cms.config</config>
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_cms">classpath:cms/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_cms.config</config>
@@ -703,8 +702,8 @@
     <bundle>mvn:org.apache.sling/org.apache.sling.cms.core/0.16.3-SNAPSHOT</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.cms.transformer/0.16.3-SNAPSHOT</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.cms.ui/0.16.3-SNAPSHOT</bundle>
+    <!-- dependencies -->
     <feature>webconsole</feature>
-
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-caconfig</feature>
     <feature version="${project.version}">sling-cms-login</feature>
@@ -726,18 +725,18 @@
     <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.poi/4.1.2_2</bundle>
     <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xmlbeans/3.1.0_2</bundle>
     <bundle dependency="true">mvn:org.jsoup/jsoup/1.13.1</bundle>
+    <!-- ... -->
     <bundle>mvn:org.apache.sling/org.apache.sling.fileoptim/0.9.4</bundle>
   </feature>
   <feature name="sling-cms-login" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.cms.login/0.16.3-SNAPSHOT</bundle>
-    <feature version="${project.version}">sling-cms</feature>
+    <!-- dependencies -->
     <feature version="${project.version}">sling-auth-form</feature>
   </feature>
   <feature name="sling-cms-reference" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.cms.reference/0.16.3-SNAPSHOT</bundle>
     <feature version="${project.version}">sling-cms</feature>
   </feature>
-  -->
   <!-- Composum -->
   <feature name="composum-nodes" version="${project.version}">
     <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~composum_nodes">classpath:org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~composum_nodes.config</config>
