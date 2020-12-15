@@ -737,6 +737,27 @@
     <bundle>mvn:org.apache.sling/org.apache.sling.cms.reference/0.16.3-SNAPSHOT</bundle>
     <feature version="${project.version}">sling-cms</feature>
   </feature>
+  <feature name="sling-cms-author" version="${project.version}">
+    <config external="true" name="org.apache.sling.cms.core.publication.ForwardAgentEndpointSynchronization">classpath:cms/author/org.apache.sling.cms.core.publication.ForwardAgentEndpointSynchronization.json</config>
+    <config external="true" name="org.apache.sling.cms.core.publication.PublicationManagerFactoryImpl">classpath:cms/author/org.apache.sling.cms.core.publication.PublicationManagerFactoryImpl.json</config>
+    <config external="true" name="org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory-default">classpath:cms/author/org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory-default.json</config>
+    <!-- dependencies -->
+    <feature version="${project.version}">sling-cms</feature>
+  </feature>
+  <feature name="sling-cms-renderer" version="${project.version}">
+    <config external="true" name="org.apache.sling.cms.core.publication.PublicationManagerFactoryImpl">classpath:cms/renderer/org.apache.sling.cms.core.publication.PublicationManagerFactoryImpl.json</config>
+    <config external="true" name="org.apache.sling.cms.core.publication.PublicationPropertyProvider">classpath:cms/renderer/org.apache.sling.cms.core.publication.PublicationPropertyProvider.json</config>
+    <config external="true" name="org.apache.sling.distribution.packaging.impl.importer.LocalDistributionPackageImporterFactory-default">classpath:cms/renderer/org.apache.sling.distribution.packaging.impl.importer.LocalDistributionPackageImporterFactory-default.json</config>
+    <config external="true" name="org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory-default">classpath:cms/renderer/org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory-default.json</config>
+    <!-- dependencies -->
+    <feature version="${project.version}">sling-cms</feature>
+  </feature>
+  <feature name="sling-cms-standalone" version="${project.version}">
+    <config external="true" name="org.apache.sling.cms.core.internal.filters.CMSSecurityConfigInstance">classpath:cms/standalone/org.apache.sling.cms.core.internal.filters.CMSSecurityConfigInstance.json</config>
+    <config external="true" name="org.apache.sling.cms.core.publication.PublicationManagerFactoryImpl">classpath:cms/standalone/org.apache.sling.cms.core.publication.PublicationManagerFactoryImpl.json</config>
+    <!-- dependencies -->
+    <feature version="${project.version}">sling-cms</feature>
+  </feature>
   <!-- Composum -->
   <feature name="composum-nodes" version="${project.version}">
     <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~composum_nodes">classpath:org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~composum_nodes.config</config>
