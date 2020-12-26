@@ -695,7 +695,6 @@
   </feature>
   <!-- Apache Sling Applications and Samples -->
   <feature name="sling-cms" version="${project.version}">
-<<<<<<< HEAD
     <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~auth">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~auth.config</config>
     <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~confbucket">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~confbucket.config</config>
     <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~confbuckets">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~confbuckets.config</config>
@@ -713,23 +712,6 @@
     <config external="true" name="org.apache.sling.event.jobs.QueueConfiguration~sling_cms">classpath:cms/org.apache.sling.event.jobs.QueueConfiguration~sling_cms.config</config>
     <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~serviceuser_webconsole">classpath:cms/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~serviceuser_webconsole.config</config>
     <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling-cms-core">classpath:cms/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling-cms-core.config</config>
-=======
-    <config external="true" name="org.apache.sling.cms.core.internal.repository.RevisionCleanupScheduler">classpath:cms/org.apache.sling.cms.core.internal.repository.RevisionCleanupScheduler.config</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~auth">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~auth.config</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation-confbucket">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation-confbucket.json</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation-confbuckets">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation-confbuckets.json</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation-confedit">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation-confedit.json</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~confroot">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~confroot.config</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~site">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~site.config</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~sitecontent">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~sitecontent.config</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~sites">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~sites.config</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~static">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~static.config</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~taxonomy">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~taxonomy.config</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~ugc">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~ugc.config</config>
-    <!-- <config external="true" name="org.apache.sling.engine.impl.auth.SlingAuthenticator">classpath:cms/org.apache.sling.engine.impl.auth.SlingAuthenticator.config</config> -->
-    <config external="true" name="org.apache.sling.event.jobs.QueueConfiguration~sling_cms">classpath:cms/org.apache.sling.event.jobs.QueueConfiguration~sling_cms.config</config>
-    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~serviceuser-webconsole">classpath:cms/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~serviceuser_webconsole.config</config>
->>>>>>> db0e490581b445366157441187bf4528837ae5cf
     <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_cms">classpath:cms/org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_cms.config</config>
     <!-- move to Sling JCR? -->
     <config external="true" name="org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl">classpath:cms/org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl.config</config>
