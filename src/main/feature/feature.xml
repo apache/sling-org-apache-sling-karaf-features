@@ -23,7 +23,7 @@
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_resourceresolver">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_resourceresolver.config</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.api/2.23.1-SNAPSHOT</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.auth.core/1.5.0</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.engine/2.7.2</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.engine/2.7.3-SNAPSHOT</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.resourceresolver/1.7.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.serviceusermapper/1.4.6</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.settings/1.4.2</bundle>
@@ -49,10 +49,6 @@
     <bundle dependency="true">mvn:org.apache.commons/commons-lang3/3.11</bundle>
     <bundle dependency="true">mvn:org.apache.commons/commons-math/2.2</bundle>
     <bundle dependency="true">mvn:org.apache.felix/org.apache.felix.converter/1.0.14</bundle>
-    <capability>
-      osgi.service;objectClass=org.apache.sling.engine.SlingRequestProcessor, <!-- provided by engine -->
-      osgi.service;objectClass=javax.servlet.ServletContext
-    </capability>
   </feature>
   <feature name="sling-configs" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.karaf-configs/0.1.1-SNAPSHOT</bundle>
