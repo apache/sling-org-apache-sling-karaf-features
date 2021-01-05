@@ -591,6 +591,7 @@
   </feature>
   <!-- Apache Sling Starter -->
   <feature name="sling-starter-content" version="${project.version}">
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_starter">classpath:starter/org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_starter.config</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.starter.content/1.0.8</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
