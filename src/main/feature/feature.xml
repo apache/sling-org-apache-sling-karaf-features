@@ -520,9 +520,9 @@
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-scripting</feature>
     <feature version="${project.version}">spifly</feature>
-    <bundle dependency="true">mvn:org.codehaus.groovy/groovy/3.0.1</bundle>
-    <bundle dependency="true">mvn:org.codehaus.groovy/groovy-json/3.0.1</bundle>
-    <bundle dependency="true">mvn:org.codehaus.groovy/groovy-templates/3.0.1</bundle>
+    <bundle dependency="true">mvn:org.codehaus.groovy/groovy/3.0.7</bundle>
+    <bundle dependency="true">mvn:org.codehaus.groovy/groovy-json/3.0.7</bundle>
+    <bundle dependency="true">mvn:org.codehaus.groovy/groovy-templates/3.0.7</bundle>
   </feature>
   <feature name="sling-scripting-java" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.java/2.1.2</bundle>
