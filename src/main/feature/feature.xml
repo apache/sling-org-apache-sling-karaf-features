@@ -21,7 +21,7 @@
   <!-- Apache Sling -->
   <feature name="sling" version="${project.version}">
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_resourceresolver">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_resourceresolver.config</config>
-    <bundle>mvn:org.apache.sling/org.apache.sling.api/2.23.0</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.api/2.23.1-SNAPSHOT</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.auth.core/1.5.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.engine/2.7.2</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.resourceresolver/1.7.0</bundle>
@@ -503,8 +503,8 @@
   <feature name="sling-scripting" version="${project.version}">
     <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_scripting">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_scripting.config</config>
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_scripting">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_scripting.config</config>
-    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.api/2.2.0</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.core/2.2.0</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.api/2.2.1-SNAPSHOT</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.core/2.3.5-SNAPSHOT</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-commons-compiler</feature>
@@ -543,7 +543,7 @@
     <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.rhino/1.7.13_1</bundle>
   </feature>
   <feature name="sling-scripting-jsp" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.jsp/2.4.2</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.jsp/2.5.1-SNAPSHOT</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.jsp.taglib/2.4.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.el-api/1.0.4</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.jsp-api/1.0.2</bundle>
@@ -555,11 +555,11 @@
   </feature>
   <feature name="sling-scripting-htl" version="${project.version}">
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_scripting_htl">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_scripting_htl.config</config>
-    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly/1.3.2-1.4.0</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.compiler/1.2.6-1.4.0</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.compiler.java/1.2.0-1.4.0</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly/1.4.7-1.4.0-SNAPSHOT</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.compiler/1.2.12-1.4.0</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.compiler.java/1.2.2-1.4.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.js.provider/1.2.6</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.runtime/1.2.2-1.4.0</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.runtime/1.2.4-1.4.0</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-jcr</feature>
@@ -587,7 +587,7 @@
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_servlets">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_servlets.config</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.servlets.get/2.1.40</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.servlets.post/2.3.36</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.servlets.resolver/2.6.4</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.servlets.resolver/2.7.13-SNAPSHOT</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-scripting</feature>
