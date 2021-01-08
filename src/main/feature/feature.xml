@@ -51,7 +51,7 @@
     <bundle dependency="true">mvn:org.apache.felix/org.apache.felix.converter/1.0.14</bundle>
   </feature>
   <feature name="sling-configs" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.karaf-configs/0.1.1-SNAPSHOT</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.karaf-configs/0.2.0-SNAPSHOT</bundle>
   </feature>
   <!-- Apache Sling Auth -->
   <feature name="sling-auth-form" version="${project.version}">
