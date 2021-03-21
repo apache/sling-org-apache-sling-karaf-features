@@ -508,6 +508,7 @@
     <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_scripting">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_scripting.config</config>
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_scripting">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_scripting.config</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.api/2.2.1-SNAPSHOT</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.spi/1.0.0-SNAPSHOT</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.core/2.3.5-SNAPSHOT</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
