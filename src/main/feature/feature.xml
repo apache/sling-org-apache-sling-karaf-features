@@ -822,8 +822,4 @@
     <bundle dependency="true">mvn:org.apache.aries/org.apache.aries.util/1.1.3</bundle>
     <feature version="${project.version}">asm</feature>
   </feature>
-  <!-- Pax URL Classpath (KARAF-6904) -->
-  <feature name="pax-url-classpath" version="${project.version}">
-    <bundle>mvn:org.ops4j.pax.url/pax-url-classpath/2.6.7</bundle>
-  </feature>
 </features>
