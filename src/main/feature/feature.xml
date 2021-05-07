@@ -20,7 +20,7 @@
 <features name="sling-${project.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.5.0">
   <!-- Apache Sling -->
   <feature name="sling" version="${project.version}">
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_resourceresolver">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_resourceresolver.config</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_resourceresolver">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_resourceresolver.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.api/2.23.1-SNAPSHOT</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.auth.core/1.5.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.engine/2.7.4</bundle>
@@ -151,8 +151,8 @@
     <feature version="${project.version}">sling</feature>
   </feature>
   <feature name="sling-caconfig" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_caconfig">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_caconfig.config</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_caconfig">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_caconfig.config</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_caconfig">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_caconfig.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_caconfig">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_caconfig.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.caconfig.api/1.2.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.caconfig.impl/1.5.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.caconfig.spi/1.3.4</bundle>
@@ -163,8 +163,8 @@
     <feature>webconsole</feature>
   </feature>
   <feature name="sling-clam" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_clam">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_clam.config</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_clam">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_clam.config</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_clam">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_clam.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_clam">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_clam.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.clam/1.1.0</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -178,9 +178,9 @@
     <feature version="${project.version}">sling</feature>
   </feature>
   <feature name="sling-discovery-oak" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling_discovery">classpath:org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling_discovery.config</config>
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_discovery">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_discovery.config</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_discovery">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_discovery.config</config>
+    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling_discovery">classpath:org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling_discovery.json</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_discovery">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_discovery.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_discovery">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_discovery.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.discovery.base/2.0.8</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.discovery.commons/1.0.20</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.discovery.oak/1.2.30</bundle>
@@ -209,8 +209,8 @@
     <feature version="${project.version}">jackrabbit-vault</feature>
   </feature>
   <feature name="sling-event" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_event">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_event.config</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_event">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_event.config</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_event">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_event.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_event">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_event.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.event/4.2.12</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.event.dea/1.1.4</bundle>
     <!-- dependencies -->
@@ -250,7 +250,7 @@
     <feature version="${project.version}">sling-scripting</feature>
   </feature>
   <feature name="sling-i18n" version="${project.version}">
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_i18n">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_i18n.config</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_i18n">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_i18n.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.i18n/2.5.16</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -301,7 +301,7 @@
     <bundle dependency="true">mvn:org.apache.felix/org.apache.felix.inventory/1.0.6</bundle>
   </feature>
   <feature name="sling-resource-presence" version="${project.version}">
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_resource_presence">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_resource_presence.config</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_resource_presence">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_resource_presence.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.resource.presence/0.0.2</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -312,7 +312,7 @@
     <feature version="${project.version}">sling</feature>
   </feature>
   <feature name="sling-rewriter" version="${project.version}">
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_rewriter">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_rewriter.config</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_rewriter">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_rewriter.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.rewriter/1.3.0</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -331,8 +331,8 @@
     <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.urlrewritefilter/4.0.4_1</bundle>
   </feature>
   <feature name="sling-validation" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_validation">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_validation.config</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_validation">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_validation.config</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_validation">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_validation.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_validation">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_validation.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.validation.api/1.0.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.validation.core/1.0.4</bundle>
     <!-- dependencies -->
@@ -341,8 +341,8 @@
     <feature version="${project.version}">sling-servlets</feature>
   </feature>
   <feature name="sling-xss" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_xss">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_xss.config</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_xss">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_xss.config</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_xss">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_xss.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_xss">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_xss.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.xss/2.2.12</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -362,8 +362,8 @@
     <feature version="${project.version}">sling-installer</feature>
   </feature>
   <feature name="sling-installer-factory-packages" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_installer_factory_packages">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_installer_factory_packages.config</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_installer_factory_packages">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_installer_factory_packages.config</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_installer_factory_packages">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_installer_factory_packages.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_installer_factory_packages">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_installer_factory_packages.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.installer.factory.packages/1.0.4</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling-installer</feature>
@@ -382,8 +382,8 @@
     <feature version="${project.version}">sling-installer</feature>
   </feature>
   <feature name="sling-installer-provider-jcr" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_installer_provider_jcr">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_installer_provider_jcr.config</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_installer_provider_jcr">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_installer_provider_jcr.config</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_installer_provider_jcr">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_installer_provider_jcr.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_installer_provider_jcr">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_installer_provider_jcr.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.installer.provider.jcr/3.3.0</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling-installer</feature>
@@ -391,15 +391,14 @@
   </feature>
   <!-- Apache Sling JCR -->
   <feature name="sling-jcr" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling_jcr">classpath:org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling_jcr.config</config>
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_jcr_contentloader">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_jcr_contentloader.config</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_jcr_resource">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_jcr_resource.config</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_jcr_contentloader">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_jcr_contentloader.config</config>
+    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling_jcr">classpath:org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling_jcr.json</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_jcr_contentloader">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_jcr_contentloader.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_jcr_resource">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_jcr_resource.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_jcr_contentloader">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_jcr_contentloader.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.api/2.4.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.base/3.1.6</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.contentloader/2.4.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.davex/1.3.10</bundle>
-    <!-- (not using org.apache.sling.jcr.jcr-wrapper) -->
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.resource/3.0.22</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.webconsole/1.1.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.webdav/2.3.8</bundle>
@@ -418,8 +417,8 @@
     <feature version="${project.version}">sling-commons-compiler</feature>
   </feature>
   <feature name="sling-jcr-jackrabbit-security" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_jcr_jackrabbit_usermanager">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_jcr_jackrabbit_usermanager.config</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_jcr_jackrabbit_usermanager">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_jcr_jackrabbit_usermanager.config</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_jcr_jackrabbit_usermanager">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_jcr_jackrabbit_usermanager.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_jcr_jackrabbit_usermanager">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_jcr_jackrabbit_usermanager.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.jackrabbit.accessmanager/3.0.8</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.jackrabbit.usermanager/2.2.12</bundle>
     <!-- dependencies -->
@@ -439,21 +438,21 @@
   <feature name="sling-quickstart-oak" version="${project.version}"><!-- hidden="true" -->
     <!-- Sling with Oak Repository and Felix Web Console -->
     <!-- http://jackrabbit.apache.org/oak/docs/osgi_config.html -->
-    <config external="true" name="org.apache.felix.jaas.Configuration.factory~GuestLoginModule">classpath:org.apache.felix.jaas.Configuration.factory~GuestLoginModule.config</config>
-    <config external="true" name="org.apache.felix.jaas.Configuration.factory~LoginModuleImpl">classpath:org.apache.felix.jaas.Configuration.factory~LoginModuleImpl.config</config>
-    <config external="true" name="org.apache.felix.jaas.Configuration.factory~TokenLoginModule">classpath:org.apache.felix.jaas.Configuration.factory~TokenLoginModule.config</config>
-    <config external="true" name="org.apache.felix.jaas.ConfigurationSpi">classpath:org.apache.felix.jaas.ConfigurationSpi.config</config>
-    <config external="true" name="org.apache.jackrabbit.oak.security.authentication.AuthenticationConfigurationImpl">classpath:org.apache.jackrabbit.oak.security.authentication.AuthenticationConfigurationImpl.config</config>
-    <config external="true" name="org.apache.jackrabbit.oak.security.authorization.AuthorizationConfigurationImpl">classpath:org.apache.jackrabbit.oak.security.authorization.AuthorizationConfigurationImpl.config</config>
-    <config external="true" name="org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration">classpath:org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration.config</config>
-    <config external="true" name="org.apache.jackrabbit.oak.security.user.UserConfigurationImpl">classpath:org.apache.jackrabbit.oak.security.user.UserConfigurationImpl.config</config>
-    <config external="true" name="org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName">classpath:org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName.config</config>
-    <config external="true" name="org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.FilterProviderImpl">classpath:org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.FilterProviderImpl.config</config>
-    <config external="true" name="org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.PrincipalBasedAuthorizationConfiguration">classpath:org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.PrincipalBasedAuthorizationConfiguration.config</config>
-    <config external="true" name="org.apache.jackrabbit.oak.spi.security.user.action.DefaultAuthorizableActionProvider">classpath:org.apache.jackrabbit.oak.spi.security.user.action.DefaultAuthorizableActionProvider.config</config>
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling.config</config>
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_mapping">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_mapping.config</config>
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_readall">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_readall.config</config>
+    <config external="true" name="org.apache.felix.jaas.Configuration.factory~GuestLoginModule">classpath:org.apache.felix.jaas.Configuration.factory~GuestLoginModule.json</config>
+    <config external="true" name="org.apache.felix.jaas.Configuration.factory~LoginModuleImpl">classpath:org.apache.felix.jaas.Configuration.factory~LoginModuleImpl.json</config>
+    <config external="true" name="org.apache.felix.jaas.Configuration.factory~TokenLoginModule">classpath:org.apache.felix.jaas.Configuration.factory~TokenLoginModule.json</config>
+    <config external="true" name="org.apache.felix.jaas.ConfigurationSpi">classpath:org.apache.felix.jaas.ConfigurationSpi.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.security.authentication.AuthenticationConfigurationImpl">classpath:org.apache.jackrabbit.oak.security.authentication.AuthenticationConfigurationImpl.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.security.authorization.AuthorizationConfigurationImpl">classpath:org.apache.jackrabbit.oak.security.authorization.AuthorizationConfigurationImpl.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration">classpath:org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.security.user.UserConfigurationImpl">classpath:org.apache.jackrabbit.oak.security.user.UserConfigurationImpl.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName">classpath:org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.FilterProviderImpl">classpath:org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.FilterProviderImpl.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.PrincipalBasedAuthorizationConfiguration">classpath:org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.PrincipalBasedAuthorizationConfiguration.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.spi.security.user.action.DefaultAuthorizableActionProvider">classpath:org.apache.jackrabbit.oak.spi.security.user.action.DefaultAuthorizableActionProvider.json</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling.json</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_mapping">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_mapping.json</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_readall">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_readall.json</config>
     <!-- dependencies -->
     <feature>webconsole</feature>
     <feature version="${project.version}">sling</feature>
@@ -470,8 +469,8 @@
     <bundle>mvn:org.apache.felix/org.apache.felix.webconsole.plugins.packageadmin/1.0.4</bundle>
   </feature>
   <feature name="sling-quickstart-oak-tar" version="${project.version}">
-    <config external="true" name="org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService">classpath:org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService.config</config>
-    <config external="true" name="org.apache.jackrabbit.oak.segment.SegmentNodeStoreService">classpath:org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config</config>
+    <config external="true" name="org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService">classpath:org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.segment.SegmentNodeStoreService">classpath:org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.json</config>
     <feature version="${project.version}">sling-quickstart-oak</feature>
     <bundle>mvn:org.apache.jackrabbit/oak-lucene/1.36</bundle>
     <bundle>mvn:org.apache.jackrabbit/oak-segment-tar/1.36</bundle>
@@ -488,8 +487,8 @@
     </capability>
   </feature>
   <feature name="sling-quickstart-oak-mongo" version="${project.version}">
-    <config external="true" name="org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService">classpath:org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService.config</config>
-    <config external="true" name="org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService">classpath:org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config</config>
+    <config external="true" name="org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService">classpath:org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService">classpath:org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.json</config>
     <feature version="${project.version}">sling-quickstart-oak</feature>
     <bundle>mvn:org.apache.jackrabbit/oak-lucene/1.36</bundle>
     <bundle>mvn:org.apache.jackrabbit/oak-store-document/1.36</bundle>
@@ -505,10 +504,10 @@
   </feature>
   <!-- Apache Sling Scripting -->
   <feature name="sling-scripting" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_scripting">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_scripting.config</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_scripting">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_scripting.config</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_scripting">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_scripting.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_scripting">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_scripting.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.api/2.2.1-SNAPSHOT</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.spi/1.0.0-SNAPSHOT</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.spi/1.0.2</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.core/2.3.5-SNAPSHOT</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -559,7 +558,7 @@
     <feature version="${project.version}">sling-caconfig</feature>
   </feature>
   <feature name="sling-scripting-htl" version="${project.version}">
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_scripting_htl">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_scripting_htl.config</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_scripting_htl">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_scripting_htl.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly/1.4.7-1.4.0-SNAPSHOT</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.compiler/1.2.12-1.4.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.compiler.java/1.2.2-1.4.0</bundle>
@@ -578,7 +577,7 @@
     <bundle dependency="true">mvn:org.antlr/antlr4-runtime/4.9.2</bundle>
   </feature>
   <feature name="sling-scripting-thymeleaf" version="${project.version}">
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_scripting_thymeleaf">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_scripting_thymeleaf.config</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_scripting_thymeleaf">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_scripting_thymeleaf.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.thymeleaf/2.0.2</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">thymeleaf</feature>
@@ -588,8 +587,8 @@
   </feature>
   <!-- Apache Sling Servlets -->
   <feature name="sling-servlets" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling_servlets">classpath:org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling_servlets.config</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_servlets">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_servlets.config</config>
+    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling_servlets">classpath:org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling_servlets.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_servlets">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_servlets.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.servlets.get/2.1.40</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.servlets.post/2.4.3-SNAPSHOT</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.servlets.resolver/2.7.13-SNAPSHOT</bundle>
@@ -600,7 +599,7 @@
   </feature>
   <!-- Apache Sling Starter -->
   <feature name="sling-starter-content" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_starter">classpath:starter/org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_starter.config</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_starter">classpath:starter/org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_starter.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.starter.content/1.0.8</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -701,27 +700,34 @@
   </feature>
   <!-- Apache Sling Applications and Samples -->
   <feature name="sling-cms" version="${project.version}">
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~auth">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~auth.config</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~confbucket">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~confbucket.config</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~confbuckets">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~confbuckets.config</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~confedit">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~confedit.config</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~confroot">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~confroot.config</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~site">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~site.config</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~sitecontent">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~sitecontent.config</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~sites">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~sites.config</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~static">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~static.config</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~taxonomy">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~taxonomy.config</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~ugc">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~ugc.config</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.repository.RevisionCleanupScheduler">classpath:cms/org.apache.sling.cms.core.internal.repository.RevisionCleanupScheduler.config</config>
-    <config external="true" name="org.apache.sling.cms.core.internal.rewriter.ReferenceMappingTransformerFactory">classpath:cms/org.apache.sling.cms.core.internal.rewriter.ReferenceMappingTransformerFactory.config</config>
-    <config external="true" name="org.apache.sling.engine.impl.auth.SlingAuthenticator">classpath:cms/org.apache.sling.engine.impl.auth.SlingAuthenticator.config</config>
-    <config external="true" name="org.apache.sling.event.jobs.QueueConfiguration~sling_cms">classpath:cms/org.apache.sling.event.jobs.QueueConfiguration~sling_cms.config</config>
-    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~serviceuser_webconsole">classpath:cms/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~serviceuser_webconsole.config</config>
-    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling-cms-core">classpath:cms/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling-cms-core.config</config>
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_cms">classpath:cms/org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_cms.config</config>
+
+    <config external="true" name="org.apache.sling.cms.core.internal.repository.DataStoreCleanupScheduler">classpath:cms/org.apache.sling.cms.core.internal.repository.DataStoreCleanupScheduler.json</config>
+    <config external="true" name="org.apache.sling.cms.core.internal.repository.RevisionCleanupScheduler">classpath:cms/org.apache.sling.cms.core.internal.repository.RevisionCleanupScheduler.json</config>
+    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~auth">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~auth.json</config>
+    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~confbucket">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~confbucket.json</config>
+    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~confbuckets">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~confbuckets.json</config>
+    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~confedit">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~confedit.json</config>
+    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~confroot">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~confroot.json</config>
+    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~site">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~site.json</config>
+    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~sitecontent">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~sitecontent.json</config>
+    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~sites">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~sites.json</config>
+    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~static">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~static.json</config>
+    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~taxonomy">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~taxonomy.json</config>
+    <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~ugc">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~ugc.json</config>
+    <config external="true" name="org.apache.sling.cms.core.internal.rewriter.ReferenceMappingTransformerFactory">classpath:cms/org.apache.sling.cms.core.internal.rewriter.ReferenceMappingTransformerFactory.json</config>
+    <config external="true" name="org.apache.sling.cms.core.readability.impl.ReadabilityServiceImpl~en">classpath:cms/org.apache.sling.cms.core.readability.impl.ReadabilityServiceImpl~en.json</config>
+    <config external="true" name="org.apache.sling.engine.impl.auth.SlingAuthenticator">classpath:cms/org.apache.sling.engine.impl.auth.SlingAuthenticator.json</config>
+    <config external="true" name="org.apache.sling.event.jobs.QueueConfiguration~sling_cms">classpath:cms/org.apache.sling.event.jobs.QueueConfiguration~sling_cms.json</config>
+    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~serviceuser_webconsole">classpath:cms/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~serviceuser_webconsole.json</config>
+    <!-- <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling_cms_core">classpath:cms/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling_cms_core.json</config> -->
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_cms">classpath:cms/org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_cms.json</config>
     <!-- move to Sling JCR? -->
-    <config external="true" name="org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl">classpath:cms/org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl.config</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_cms">classpath:cms/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_cms.config</config>
+    <config external="true" name="org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl">classpath:cms/org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_cms_error">classpath:cms/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_cms_error.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_cms_metadata">classpath:cms/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_cms_metadata.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_cms_transformer">classpath:cms/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_cms_transformer.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_cms_ugc">classpath:cms/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_cms_ugc.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_cms_versionmgr">classpath:cms/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_cms_versionmgr.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.cms.api/0.16.3-SNAPSHOT</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.cms.core/0.16.3-SNAPSHOT</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.cms.transformer/0.16.3-SNAPSHOT</bundle>
@@ -757,34 +763,34 @@
     <feature version="${project.version}">sling-auth-form</feature>
   </feature>
   <feature name="sling-cms-reference" version="${project.version}">
-    <config external="true" name="org.apache.sling.cms.core.internal.rewriter.ReferenceMappingTransformerFactory">classpath:cms/reference/org.apache.sling.cms.core.internal.rewriter.ReferenceMappingTransformerFactory.config</config>
+    <config external="true" name="org.apache.sling.cms.core.internal.rewriter.ReferenceMappingTransformerFactory">classpath:cms/reference/org.apache.sling.cms.core.internal.rewriter.ReferenceMappingTransformerFactory.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.cms.reference/0.16.3-SNAPSHOT</bundle>
     <feature version="${project.version}">sling-cms</feature>
   </feature>
   <feature name="sling-cms-author" version="${project.version}">
-    <config external="true" name="org.apache.sling.cms.core.publication.ForwardAgentEndpointSynchronization">classpath:cms/author/org.apache.sling.cms.core.publication.ForwardAgentEndpointSynchronization.config</config>
-    <config external="true" name="org.apache.sling.cms.core.publication.PublicationManagerFactoryImpl">classpath:cms/author/org.apache.sling.cms.core.publication.PublicationManagerFactoryImpl.config</config>
-    <config external="true" name="org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory~default">classpath:cms/author/org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory~default.config</config>
+    <config external="true" name="org.apache.sling.cms.core.publication.ForwardAgentEndpointSynchronization">classpath:cms/author/org.apache.sling.cms.core.publication.ForwardAgentEndpointSynchronization.json</config>
+    <config external="true" name="org.apache.sling.cms.core.publication.PublicationManagerFactoryImpl">classpath:cms/author/org.apache.sling.cms.core.publication.PublicationManagerFactoryImpl.json</config>
+    <config external="true" name="org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory~default">classpath:cms/author/org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory~default.json</config>
     <!-- dependencies -->
     <feature version="${project.version}">sling-cms</feature>
   </feature>
   <feature name="sling-cms-renderer" version="${project.version}">
-    <config external="true" name="org.apache.sling.cms.core.publication.PublicationManagerFactoryImpl">classpath:cms/renderer/org.apache.sling.cms.core.publication.PublicationManagerFactoryImpl.config</config>
-    <config external="true" name="org.apache.sling.cms.core.publication.PublicationPropertyProvider">classpath:cms/renderer/org.apache.sling.cms.core.publication.PublicationPropertyProvider.config</config>
-    <config external="true" name="org.apache.sling.distribution.packaging.impl.importer.LocalDistributionPackageImporterFactory~default">classpath:cms/renderer/org.apache.sling.distribution.packaging.impl.importer.LocalDistributionPackageImporterFactory~default.config</config>
-    <config external="true" name="org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory~default">classpath:cms/renderer/org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory~default.config</config>
+    <config external="true" name="org.apache.sling.cms.core.publication.PublicationManagerFactoryImpl">classpath:cms/renderer/org.apache.sling.cms.core.publication.PublicationManagerFactoryImpl.json</config>
+    <config external="true" name="org.apache.sling.cms.core.publication.PublicationPropertyProvider">classpath:cms/renderer/org.apache.sling.cms.core.publication.PublicationPropertyProvider.json</config>
+    <config external="true" name="org.apache.sling.distribution.packaging.impl.importer.LocalDistributionPackageImporterFactory~default">classpath:cms/renderer/org.apache.sling.distribution.packaging.impl.importer.LocalDistributionPackageImporterFactory~default.json</config>
+    <config external="true" name="org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory~default">classpath:cms/renderer/org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory~default.json</config>
     <!-- dependencies -->
     <feature version="${project.version}">sling-cms</feature>
   </feature>
   <feature name="sling-cms-standalone" version="${project.version}">
-    <config external="true" name="org.apache.sling.cms.core.internal.filters.CMSSecurityConfigInstance">classpath:cms/standalone/org.apache.sling.cms.core.internal.filters.CMSSecurityConfigInstance.config</config>
-    <config external="true" name="org.apache.sling.cms.core.publication.PublicationManagerFactoryImpl">classpath:cms/standalone/org.apache.sling.cms.core.publication.PublicationManagerFactoryImpl.config</config>
+    <config external="true" name="org.apache.sling.cms.core.internal.filters.CMSSecurityConfigInstance">classpath:cms/standalone/org.apache.sling.cms.core.internal.filters.CMSSecurityConfigInstance.json</config>
+    <config external="true" name="org.apache.sling.cms.core.publication.PublicationManagerFactoryImpl">classpath:cms/standalone/org.apache.sling.cms.core.publication.PublicationManagerFactoryImpl.json</config>
     <!-- dependencies -->
     <feature version="${project.version}">sling-cms</feature>
   </feature>
   <!-- Composum -->
   <feature name="composum-nodes" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~composum_nodes">classpath:org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~composum_nodes.config</config>
+    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~composum_nodes">classpath:composum/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~composum_nodes.json</config>
     <bundle>mvn:com.composum.nodes/composum-nodes-commons/2.4.3</bundle>
     <bundle>mvn:com.composum.nodes/composum-nodes-console/2.4.3</bundle>
     <bundle>mvn:com.composum.nodes/composum-nodes-jslibs/2.4.3</bundle>
