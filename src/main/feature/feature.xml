@@ -20,6 +20,7 @@
 <features name="sling-${project.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.5.0">
   <!-- Apache Sling -->
   <feature name="sling" version="${project.version}">
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_auth_core">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_auth_core.json</config>
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_resourceresolver">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling_resourceresolver.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.api/2.23.4</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.auth.core/1.5.2</bundle>
