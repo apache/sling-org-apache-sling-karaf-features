@@ -451,6 +451,7 @@
     <config external="true" name="org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.FilterProviderImpl">classpath:org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.FilterProviderImpl.json</config>
     <config external="true" name="org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.PrincipalBasedAuthorizationConfiguration">classpath:org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.PrincipalBasedAuthorizationConfiguration.json</config>
     <config external="true" name="org.apache.jackrabbit.oak.spi.security.user.action.DefaultAuthorizableActionProvider">classpath:org.apache.jackrabbit.oak.spi.security.user.action.DefaultAuthorizableActionProvider.json</config>
+    <config external="true" name="org.apache.jackrabbit.vault.packaging.impl.PackagingImpl">classpath:org.apache.jackrabbit.vault.packaging.impl.PackagingImpl.json</config>
     <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling.json</config>
     <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_mapping">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_mapping.json</config>
     <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_readall">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling_readall.json</config>
