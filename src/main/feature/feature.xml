@@ -702,7 +702,6 @@
   </feature>
   <!-- Apache Sling Applications and Samples -->
   <feature name="sling-cms" version="${project.version}">
-
     <config external="true" name="org.apache.sling.cms.core.internal.repository.DataStoreCleanupScheduler">classpath:cms/org.apache.sling.cms.core.internal.repository.DataStoreCleanupScheduler.json</config>
     <config external="true" name="org.apache.sling.cms.core.internal.repository.RevisionCleanupScheduler">classpath:cms/org.apache.sling.cms.core.internal.repository.RevisionCleanupScheduler.json</config>
     <config external="true" name="org.apache.sling.cms.core.internal.ResourceEditorAssociation~auth">classpath:cms/org.apache.sling.cms.core.internal.ResourceEditorAssociation~auth.json</config>
@@ -721,9 +720,7 @@
     <config external="true" name="org.apache.sling.engine.impl.auth.SlingAuthenticator">classpath:cms/org.apache.sling.engine.impl.auth.SlingAuthenticator.json</config>
     <config external="true" name="org.apache.sling.event.jobs.QueueConfiguration~sling-cms">classpath:cms/org.apache.sling.event.jobs.QueueConfiguration~sling-cms.json</config>
     <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~serviceuser-webconsole">classpath:cms/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~serviceuser-webconsole.json</config>
-    <!-- <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling-cms-core">classpath:cms/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling-cms-core.json</config> -->
     <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-cms">classpath:cms/org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-cms.json</config>
-    <!-- move to Sling JCR? -->
     <config external="true" name="org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl">classpath:cms/org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl.json</config>
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-cms-error">classpath:cms/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-cms-error.json</config>
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-cms-metadata">classpath:cms/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-cms-metadata.json</config>
