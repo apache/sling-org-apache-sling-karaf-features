@@ -417,10 +417,15 @@
     <feature version="${project.version}">sling-jcr</feature>
     <feature version="${project.version}">sling-commons-compiler</feature>
   </feature>
-  <feature name="sling-jcr-jackrabbit-security" version="${project.version}">
+  <feature name="sling-jcr-jackrabbit-accessmanager" version="${project.version}">
+    <bundle>mvn:org.apache.sling/org.apache.sling.jcr.jackrabbit.accessmanager/3.0.8</bundle>
+    <!-- dependencies -->
+    <feature version="${project.version}">sling-jcr</feature>
+    <feature version="${project.version}">sling-servlets</feature>
+  </feature>
+  <feature name="sling-jcr-jackrabbit-usermanager" version="${project.version}">
     <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-jcr-jackrabbit-usermanager">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-jcr-jackrabbit-usermanager.json</config>
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-jcr-jackrabbit-usermanager">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-jcr-jackrabbit-usermanager.json</config>
-    <bundle>mvn:org.apache.sling/org.apache.sling.jcr.jackrabbit.accessmanager/3.0.8</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.jackrabbit.usermanager/2.2.12</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling-jcr</feature>
@@ -431,7 +436,6 @@
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-jcr</feature>
-    <feature version="${project.version}">sling-jcr-jackrabbit-security</feature>
     <bundle dependency="true">mvn:org.apache.sling/org.apache.sling.repoinit.parser/1.6.8</bundle>
     <bundle dependency="true">mvn:org.apache.sling/org.apache.sling.provisioning.model/1.8.6</bundle>
   </feature>
