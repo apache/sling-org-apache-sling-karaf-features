@@ -212,7 +212,7 @@
   <feature name="sling-event" version="${project.version}">
     <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-event">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-event.json</config>
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-event">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-event.json</config>
-    <bundle>mvn:org.apache.sling/org.apache.sling.event/4.2.22</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.event/4.2.24</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.event.dea/1.1.4</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -232,7 +232,7 @@
     <feature version="${project.version}">sling</feature>
   </feature>
   <feature name="sling-fsresource" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.fsresource/2.1.16</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.fsresource/2.2.0</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">jackrabbit-vault</feature>
@@ -274,9 +274,7 @@
     <bundle>mvn:org.apache.sling/org.apache.sling.models.jacksonexporter/1.0.8</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling-models</feature>
-    <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-annotations/2.12.4</bundle>
-    <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-core/2.12.4</bundle>
-    <bundle dependency="true">mvn:com.fasterxml.jackson.core/jackson-databind/2.12.4</bundle>
+    <feature version="2.12.5">jackson</feature>
   </feature>
   <feature name="sling-pipes" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.pipes/4.1.2</bundle>
@@ -352,13 +350,13 @@
   <!-- Apache Sling Installer -->
   <feature name="sling-installer" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.installer.console/1.1.0</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.installer.core/3.11.4</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.installer.core/3.12.0</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <bundle dependency="true">mvn:org.apache.felix/org.apache.felix.cm.json/1.0.6</bundle>
   </feature>
   <feature name="sling-installer-factory-configuration" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.installer.factory.configuration/1.3.4</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.installer.factory.configuration/1.4.0</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling-installer</feature>
   </feature>
@@ -514,7 +512,7 @@
     <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-scripting">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-scripting.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.api/2.2.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.spi/1.0.4</bundle>
-    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.core/2.3.6</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.core/2.4.0</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-commons-compiler</feature>
@@ -616,8 +614,8 @@
   <!-- Apache Felix Healthcheck -->
   <feature name="felix-healthcheck" version="${project.version}">
     <bundle>mvn:org.apache.felix/org.apache.felix.healthcheck.api/2.0.4</bundle>
-    <bundle>mvn:org.apache.felix/org.apache.felix.healthcheck.core/2.0.8</bundle>
-    <bundle>mvn:org.apache.felix/org.apache.felix.healthcheck.generalchecks/2.0.6</bundle>
+    <bundle>mvn:org.apache.felix/org.apache.felix.healthcheck.core/2.0.10</bundle>
+    <bundle>mvn:org.apache.felix/org.apache.felix.healthcheck.generalchecks/2.0.12</bundle>
     <bundle>mvn:org.apache.felix/org.apache.felix.healthcheck.webconsoleplugin/2.0.2</bundle>
     <!-- dependencies -->
     <feature>eventadmin</feature>
@@ -702,8 +700,8 @@
   </feature>
   <!-- Apache Tika -->
   <feature name="tika" version="${project.version}">
-    <bundle>mvn:org.apache.tika/tika-core/1.26</bundle>
-    <bundle>mvn:org.apache.tika/tika-parsers/1.26</bundle>
+    <bundle>mvn:org.apache.tika/tika-core/1.27</bundle>
+    <bundle>mvn:org.apache.tika/tika-parsers/1.27</bundle>
     <bundle>mvn:org.apache.pdfbox/pdfbox/2.0.24</bundle>
     <bundle>mvn:org.apache.pdfbox/fontbox/2.0.24</bundle>
     <bundle>mvn:org.apache.pdfbox/jempbox/1.8.16</bundle>
