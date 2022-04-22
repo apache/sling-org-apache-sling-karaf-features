@@ -274,7 +274,7 @@
     <bundle>mvn:org.apache.sling/org.apache.sling.models.jacksonexporter/1.1.2</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling-models</feature>
-    <feature version="2.12.5">jackson</feature>
+    <feature>jackson</feature>
   </feature>
   <feature name="sling-pipes" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.pipes/4.4.0</bundle>
