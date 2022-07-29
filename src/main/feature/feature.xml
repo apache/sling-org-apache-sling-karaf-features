@@ -20,8 +20,8 @@
 <features name="sling-${project.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.5.0">
   <!-- Apache Sling -->
   <feature name="sling" version="${project.version}">
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-auth-core">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-auth-core.json</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-resourceresolver">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-resourceresolver.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-auth-core">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-auth-core.cfg.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-resourceresolver">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-resourceresolver.cfg.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.api/2.25.4</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.auth.core/1.5.6</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.engine/2.9.2</bundle>
@@ -152,8 +152,8 @@
     <feature version="${project.version}">sling</feature>
   </feature>
   <feature name="sling-caconfig" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-caconfig">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-caconfig.json</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-caconfig">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-caconfig.json</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-caconfig">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-caconfig.cfg.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-caconfig">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-caconfig.cfg.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.caconfig.api/1.3.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.caconfig.impl/1.6.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.caconfig.spi/1.4.0</bundle>
@@ -164,8 +164,8 @@
     <feature>webconsole</feature>
   </feature>
   <feature name="sling-clam" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-clam">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-clam.json</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-clam">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-clam.json</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-clam">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-clam.cfg.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-clam">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-clam.cfg.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.clam/1.1.0</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -179,9 +179,9 @@
     <feature version="${project.version}">sling</feature>
   </feature>
   <feature name="sling-discovery-oak" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling-discovery">classpath:org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling-discovery.json</config>
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-discovery">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-discovery.json</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-discovery">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-discovery.json</config>
+    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling-discovery">classpath:org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling-discovery.cfg.json</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-discovery">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-discovery.cfg.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-discovery">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-discovery.cfg.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.discovery.base/2.0.12</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.discovery.commons/1.0.26</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.discovery.oak/1.2.36</bundle>
@@ -210,8 +210,8 @@
     <feature version="${project.version}">jackrabbit-vault</feature>
   </feature>
   <feature name="sling-event" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-event">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-event.json</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-event">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-event.json</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-event">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-event.cfg.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-event">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-event.cfg.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.event/4.3.6</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.event.dea/1.1.4</bundle>
     <!-- dependencies -->
@@ -242,7 +242,7 @@
     <bundle dependency="true">mvn:org.apache.jackrabbit/jackrabbit-jcr-commons/2.20.6</bundle>
   </feature>
   <feature name="sling-i18n" version="${project.version}">
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-i18n">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-i18n.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-i18n">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-i18n.cfg.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.i18n/2.5.18</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -291,7 +291,7 @@
     <bundle dependency="true">mvn:org.apache.felix/org.apache.felix.inventory/1.1.0</bundle>
   </feature>
   <feature name="sling-resource-presence" version="${project.version}">
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-resource-presence">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-resource-presence.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-resource-presence">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-resource-presence.cfg.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.resource.presence/0.0.2</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -302,7 +302,7 @@
     <feature version="${project.version}">sling</feature>
   </feature>
   <feature name="sling-rewriter" version="${project.version}">
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-rewriter">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-rewriter.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-rewriter">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-rewriter.cfg.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.rewriter/1.3.2</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -321,8 +321,8 @@
     <bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.urlrewritefilter/4.0.4_1</bundle>
   </feature>
   <feature name="sling-validation" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-validation">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-validation.json</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-validation">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-validation.json</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-validation">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-validation.cfg.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-validation">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-validation.cfg.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.validation.api/1.0.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.validation.core/1.0.4</bundle>
     <!-- dependencies -->
@@ -331,8 +331,8 @@
     <feature version="${project.version}">sling-servlets</feature>
   </feature>
   <feature name="sling-xss" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-xss">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-xss.json</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-xss">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-xss.json</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-xss">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-xss.cfg.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-xss">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-xss.cfg.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.xss/2.2.20</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -353,8 +353,8 @@
     <feature version="${project.version}">sling-installer</feature>
   </feature>
   <feature name="sling-installer-factory-packages" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-installer-factory-packages">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-installer-factory-packages.json</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-installer-factory-packages">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-installer-factory-packages.json</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-installer-factory-packages">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-installer-factory-packages.cfg.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-installer-factory-packages">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-installer-factory-packages.cfg.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.installer.factory.packages/1.0.4</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling-installer</feature>
@@ -373,8 +373,8 @@
     <feature version="${project.version}">sling-installer</feature>
   </feature>
   <feature name="sling-installer-provider-jcr" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-installer-provider-jcr">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-installer-provider-jcr.json</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-installer-provider-jcr">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-installer-provider-jcr.json</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-installer-provider-jcr">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-installer-provider-jcr.cfg.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-installer-provider-jcr">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-installer-provider-jcr.cfg.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.installer.provider.jcr/3.3.0</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling-installer</feature>
@@ -382,10 +382,10 @@
   </feature>
   <!-- Apache Sling JCR -->
   <feature name="sling-jcr" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling-jcr">classpath:org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling-jcr.json</config>
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-jcr-contentloader">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-jcr-contentloader.json</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-jcr-resource">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-jcr-resource.json</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-jcr-contentloader">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-jcr-contentloader.json</config>
+    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling-jcr">classpath:org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling-jcr.cfg.json</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-jcr-contentloader">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-jcr-contentloader.cfg.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-jcr-resource">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-jcr-resource.cfg.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-jcr-contentloader">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-jcr-contentloader.cfg.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.api/2.4.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.base/3.1.10</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.contentloader/2.5.2</bundle>
@@ -414,8 +414,8 @@
     <feature version="${project.version}">sling-servlets</feature>
   </feature>
   <feature name="sling-jcr-jackrabbit-usermanager" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-jcr-jackrabbit-usermanager">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-jcr-jackrabbit-usermanager.json</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-jcr-jackrabbit-usermanager">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-jcr-jackrabbit-usermanager.json</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-jcr-jackrabbit-usermanager">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-jcr-jackrabbit-usermanager.cfg.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-jcr-jackrabbit-usermanager">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-jcr-jackrabbit-usermanager.cfg.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.jcr.jackrabbit.usermanager/2.2.22</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling-jcr</feature>
@@ -433,22 +433,22 @@
   <feature name="sling-quickstart-oak" version="${project.version}"><!-- hidden="true" -->
     <!-- Sling with Oak Repository and Felix Web Console -->
     <!-- http://jackrabbit.apache.org/oak/docs/osgi_config.html -->
-    <config external="true" name="org.apache.felix.jaas.Configuration.factory~GuestLoginModule">classpath:org.apache.felix.jaas.Configuration.factory~GuestLoginModule.json</config>
-    <config external="true" name="org.apache.felix.jaas.Configuration.factory~LoginModuleImpl">classpath:org.apache.felix.jaas.Configuration.factory~LoginModuleImpl.json</config>
-    <config external="true" name="org.apache.felix.jaas.Configuration.factory~TokenLoginModule">classpath:org.apache.felix.jaas.Configuration.factory~TokenLoginModule.json</config>
-    <config external="true" name="org.apache.felix.jaas.ConfigurationSpi">classpath:org.apache.felix.jaas.ConfigurationSpi.json</config>
-    <config external="true" name="org.apache.jackrabbit.oak.security.authentication.AuthenticationConfigurationImpl">classpath:org.apache.jackrabbit.oak.security.authentication.AuthenticationConfigurationImpl.json</config>
-    <config external="true" name="org.apache.jackrabbit.oak.security.authorization.AuthorizationConfigurationImpl">classpath:org.apache.jackrabbit.oak.security.authorization.AuthorizationConfigurationImpl.json</config>
-    <config external="true" name="org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration">classpath:org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration.json</config>
-    <config external="true" name="org.apache.jackrabbit.oak.security.user.UserConfigurationImpl">classpath:org.apache.jackrabbit.oak.security.user.UserConfigurationImpl.json</config>
-    <config external="true" name="org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName">classpath:org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName.json</config>
-    <config external="true" name="org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.FilterProviderImpl">classpath:org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.FilterProviderImpl.json</config>
-    <config external="true" name="org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.PrincipalBasedAuthorizationConfiguration">classpath:org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.PrincipalBasedAuthorizationConfiguration.json</config>
-    <config external="true" name="org.apache.jackrabbit.oak.spi.security.user.action.DefaultAuthorizableActionProvider">classpath:org.apache.jackrabbit.oak.spi.security.user.action.DefaultAuthorizableActionProvider.json</config>
-    <config external="true" name="org.apache.jackrabbit.vault.packaging.impl.PackagingImpl">classpath:org.apache.jackrabbit.vault.packaging.impl.PackagingImpl.json</config>
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling.json</config>
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-mapping">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-mapping.json</config>
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-readall">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-readall.json</config>
+    <config external="true" name="org.apache.felix.jaas.Configuration.factory~GuestLoginModule">classpath:org.apache.felix.jaas.Configuration.factory~GuestLoginModule.cfg.json</config>
+    <config external="true" name="org.apache.felix.jaas.Configuration.factory~LoginModuleImpl">classpath:org.apache.felix.jaas.Configuration.factory~LoginModuleImpl.cfg.json</config>
+    <config external="true" name="org.apache.felix.jaas.Configuration.factory~TokenLoginModule">classpath:org.apache.felix.jaas.Configuration.factory~TokenLoginModule.cfg.json</config>
+    <config external="true" name="org.apache.felix.jaas.ConfigurationSpi">classpath:org.apache.felix.jaas.ConfigurationSpi.cfg.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.security.authentication.AuthenticationConfigurationImpl">classpath:org.apache.jackrabbit.oak.security.authentication.AuthenticationConfigurationImpl.cfg.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.security.authorization.AuthorizationConfigurationImpl">classpath:org.apache.jackrabbit.oak.security.authorization.AuthorizationConfigurationImpl.cfg.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration">classpath:org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration.cfg.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.security.user.UserConfigurationImpl">classpath:org.apache.jackrabbit.oak.security.user.UserConfigurationImpl.cfg.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName">classpath:org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName.cfg.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.FilterProviderImpl">classpath:org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.FilterProviderImpl.cfg.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.PrincipalBasedAuthorizationConfiguration">classpath:org.apache.jackrabbit.oak.spi.security.authorization.principalbased.impl.PrincipalBasedAuthorizationConfiguration.cfg.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.spi.security.user.action.DefaultAuthorizableActionProvider">classpath:org.apache.jackrabbit.oak.spi.security.user.action.DefaultAuthorizableActionProvider.cfg.json</config>
+    <config external="true" name="org.apache.jackrabbit.vault.packaging.impl.PackagingImpl">classpath:org.apache.jackrabbit.vault.packaging.impl.PackagingImpl.cfg.json</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling.cfg.json</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-mapping">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-mapping.cfg.json</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-readall">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-readall.cfg.json</config>
     <!-- dependencies -->
     <feature>webconsole</feature>
     <feature version="${project.version}">sling</feature>
@@ -465,8 +465,8 @@
     <bundle>mvn:org.apache.felix/org.apache.felix.webconsole.plugins.packageadmin/1.0.4</bundle>
   </feature>
   <feature name="sling-quickstart-oak-tar" version="${project.version}">
-    <config external="true" name="org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService">classpath:org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService.json</config>
-    <config external="true" name="org.apache.jackrabbit.oak.segment.SegmentNodeStoreService">classpath:org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService">classpath:org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService.cfg.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.segment.SegmentNodeStoreService">classpath:org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg.json</config>
     <feature version="${project.version}">sling-quickstart-oak</feature>
     <bundle>mvn:org.apache.jackrabbit/oak-lucene/1.44.0</bundle>
     <bundle>mvn:org.apache.jackrabbit/oak-segment-tar/1.44.0</bundle>
@@ -483,8 +483,8 @@
     </capability>
   </feature>
   <feature name="sling-quickstart-oak-mongo" version="${project.version}">
-    <config external="true" name="org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService">classpath:org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService.json</config>
-    <config external="true" name="org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService">classpath:org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService">classpath:org.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService.cfg.json</config>
+    <config external="true" name="org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService">classpath:org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg.json</config>
     <feature version="${project.version}">sling-quickstart-oak</feature>
     <bundle>mvn:org.apache.jackrabbit/oak-lucene/1.44.0</bundle>
     <bundle>mvn:org.apache.jackrabbit/oak-store-document/1.44.0</bundle>
@@ -500,8 +500,8 @@
   </feature>
   <!-- Apache Sling Scripting -->
   <feature name="sling-scripting" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-scripting">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-scripting.json</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-scripting">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-scripting.json</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-scripting">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-scripting.cfg.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-scripting">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-scripting.cfg.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.api/2.2.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.spi/1.0.4</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.core/2.4.8</bundle>
@@ -554,7 +554,7 @@
     <feature version="${project.version}">sling-caconfig</feature>
   </feature>
   <feature name="sling-scripting-htl" version="${project.version}">
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-scripting-htl">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-scripting-htl.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-scripting-htl">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-scripting-htl.cfg.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly/1.4.18-1.4.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.compiler/1.2.14-1.4.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.sightly.compiler.java/1.2.2-1.4.0</bundle>
@@ -573,7 +573,7 @@
     <bundle dependency="true">mvn:org.antlr/antlr4-runtime/4.9.3</bundle>
   </feature>
   <feature name="sling-scripting-thymeleaf" version="${project.version}">
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-scripting-thymeleaf">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-scripting-thymeleaf.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-scripting-thymeleaf">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-scripting-thymeleaf.cfg.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.thymeleaf/2.0.2</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">thymeleaf</feature>
@@ -583,8 +583,8 @@
   </feature>
   <!-- Apache Sling Servlets -->
   <feature name="sling-servlets" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling-servlets">classpath:org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling-servlets.json</config>
-    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-servlets">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-servlets.json</config>
+    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling-servlets">classpath:org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling-servlets.cfg.json</config>
+    <config external="true" name="org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-servlets">classpath:org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~sling-servlets.cfg.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.servlets.get/2.1.44</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.servlets.post/2.5.0</bundle>
     <bundle>mvn:org.apache.sling/org.apache.sling.servlets.resolver/2.9.6</bundle>
@@ -595,7 +595,7 @@
   </feature>
   <!-- Apache Sling Starter -->
   <feature name="sling-starter-content" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-starter">classpath:starter/org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-starter.json</config>
+    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-starter">classpath:starter/org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-starter.cfg.json</config>
     <bundle>mvn:org.apache.sling/org.apache.sling.starter.content/1.0.12</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
@@ -701,7 +701,7 @@
   <!-- Apache Sling Applications and Samples -->
   <!-- Composum -->
   <feature name="composum-nodes" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~composum-nodes">classpath:composum/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~composum-nodes.json</config>
+    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~composum-nodes">classpath:composum/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~composum-nodes.cfg.json</config>
     <bundle>mvn:com.composum.nodes/composum-nodes-commons/4.1.2</bundle>
     <bundle>mvn:com.composum.nodes/composum-nodes-console/4.1.2</bundle>
     <bundle>mvn:com.composum.nodes/composum-nodes-jslibs/4.1.2</bundle>
