@@ -518,14 +518,12 @@
     <bundle dependency="true">mvn:org.freemarker/freemarker/2.3.31</bundle>
   </feature>
   <feature name="sling-scripting-groovy" version="${project.version}">
-    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.groovy/1.2.1-SNAPSHOT</bundle>
+    <bundle>mvn:org.apache.sling/org.apache.sling.scripting.groovy/1.3.0-SNAPSHOT</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
     <feature version="${project.version}">sling-scripting</feature>
-    <feature>spifly</feature>
-    <bundle dependency="true">mvn:org.apache.groovy/groovy/4.0.4</bundle>
-    <bundle dependency="true">mvn:org.apache.groovy/groovy-json/4.0.4</bundle>
-    <bundle dependency="true">mvn:org.apache.groovy/groovy-templates/4.0.4</bundle>
+    <bundle dependency="true">mvn:org.apache.groovy/groovy/4.0.8</bundle>
+    <bundle dependency="true">mvn:org.apache.groovy/groovy-templates/4.0.8</bundle>
   </feature>
   <feature name="sling-scripting-java" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.scripting.java/2.1.6</bundle>
