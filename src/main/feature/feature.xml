@@ -126,6 +126,9 @@
     <!-- dependencies -->
     <feature>eventadmin</feature>
   </feature>
+  <feature name="sling-commons-permissions" version="${project.version}">
+    <bundle>mvn:org.apache.sling/org.apache.sling.commons.permissions/1.0.0-SNAPSHOT</bundle>
+  </feature>
   <feature name="sling-commons-scheduler" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.commons.scheduler/2.7.12</bundle>
     <!-- dependencies -->
