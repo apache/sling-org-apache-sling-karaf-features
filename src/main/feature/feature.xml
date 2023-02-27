@@ -358,7 +358,7 @@
     <bundle>mvn:org.apache.sling/org.apache.sling.installer.core/3.12.0</bundle>
     <!-- dependencies -->
     <feature version="${project.version}">sling</feature>
-    <bundle dependency="true">mvn:org.apache.felix/org.apache.felix.cm.json/2.0.0</bundle>
+    <bundle dependency="true">mvn:org.apache.felix/org.apache.felix.cm.json/1.0.8</bundle>
   </feature>
   <feature name="sling-installer-factory-configuration" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.installer.factory.configuration/1.4.2</bundle>
