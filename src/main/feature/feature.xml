@@ -129,15 +129,6 @@
   <feature name="sling-commons-permissions" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.commons.permissions/1.0.0-SNAPSHOT</bundle>
   </feature>
-  <feature name="sling-commons-permissions-sling" version="${project.version}">
-    <config external="true" name="org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling-commons-permissions-sling">classpath:org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment~sling-commons-permissions-sling.cfg.json</config>
-    <config external="true" name="org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-commons-permissions-sling">classpath:org.apache.sling.jcr.repoinit.RepositoryInitializer~sling-commons-permissions-sling.cfg.json</config>
-    <bundle>mvn:org.apache.sling/org.apache.sling.commons.permissions.sling/1.0.0-SNAPSHOT</bundle>
-    <!-- dependencies -->
-    <feature>scr</feature>
-    <feature version="${project.version}">sling-commons-permissions</feature>
-    <feature version="${project.version}">sling-jcr</feature>
-  </feature>
   <feature name="sling-commons-scheduler" version="${project.version}">
     <bundle>mvn:org.apache.sling/org.apache.sling.commons.scheduler/2.7.12</bundle>
     <!-- dependencies -->
